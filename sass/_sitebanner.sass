@@ -1,0 +1,70 @@
+.slide
+  width: 100%
+  margin: 0px auto
+  padding: 0px
+  box-sizing: border-box
+  overflow: hidden
+  background-color: $blanco
+  z-index: 100
+  h2
+    text-align: center
+    color: $m-azul
+    padding: 20px
+    font-size: 1.875em
+  .metaslider
+    box-sizing: border-box
+    margin: 0px auto
+    text-align: center
+    min-height: 100%
+    max-width: 100%
+    min-width: 100%
+    z-index: 100
+    .caption-wrap
+      background: none !important
+      bottom: 95px !important
+      margin-top: 20px
+      text-align: center
+      text-transform: uppercase
+      h1
+        color: $m-amarillo
+        font-size: 2.6em
+        @media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+          font-size: 1.8em
+      h2
+        color: $blanco
+        font-style: italic
+        font-size: 2.2em
+        margin-top: 10px
+        @media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+          font-size: 1.5em
+    .slides
+      @media screen and (max-width: 640px)
+        img
+          height: auto
+          width: 100%
+          z-index: 100
+          display: block
+    .flexslider
+      padding: 0px
+      margin: 0px
+      z-index: 100
+      .flex-control-nav
+        padding: 20px
+        background-color: rgba($blanco,0.5)
+        width: 100%
+        bottom: 0px
+        z-index: 100
+        height: auto
+        @media screen and (max-width: 640px)
+          display: none
+          background-color: $m-azul
+          z-index: 150
+  .soliloquy-container
+    width: 100%
+    margin: 0px auto
+  img
+    box-sizing: border-box
+    width: 100%
+    margin: 0px auto
+    vertical-align: top
+    z-index: 100

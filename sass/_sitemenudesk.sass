@@ -1,0 +1,182 @@
+.e-menu
+	background-color: #fff
+	width: 100%
+	@media screen and (max-width: 640px) /*  de 640px a 0px =====*/
+		background-color: $blanco
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3)
+	.navbar-me
+		@media screen and ( max-width: 640px )/*  de 640px a 0px =====*/
+			display: none
+		ul.menu
+			display: flex
+			flex-flow: row
+			flex-wrap: wrap
+			justify-content: center
+			.current_page_item
+				transition: 0.5s ease
+				&:after
+					width: 100%
+					content: ''
+					display: block
+					background-color: $celeste
+					height: 3px
+					width: calc(var(--ttw)/2)
+					position: absolute
+					left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 )
+					bottom: 0px
+					z-index: 100
+					transition: 0.5s ease
+			li
+				position: relative
+				padding: 0px 0px 0px
+				--ttw: 100%
+				&:hover
+					transition: 0.5s ease
+					&:after
+						width: 100%
+						content: ''
+						display: block
+						background-color: $celeste
+						height: 3px
+						width: calc(var(--sizem)/2)
+						position: absolute
+						left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 )
+						bottom: 0px
+						z-index: 100
+						transition: 0.5s ease
+				a
+					padding: 20px 10px 20px
+					display: block
+					color: $m-azul
+					text-decoration: none
+					&:hover
+						color: $m-verde
+/*==================Men MSC============ menu desk =============*/
+.e-menu
+	.sticky-wrapper
+		height: auto !important
+	#menu-desk
+		z-index: 99999999!important
+		position: sticky
+		display: block
+		opacity: 1!important
+.menu-desk
+	padding: 20px
+	@media screen and ( max-width: 640px )/* 640px a 0px =====*/
+		padding: 0px
+	background-color: $blanco
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.3)
+	-webkit-transition: all .5s ease .15s
+	-moz-transition: all .5s ease .15s
+	-o-transition: all .5s ease .15s
+	-ms-transition: all .5s ease .15s
+	transition: all .5s ease .15s
+	.menu-coverpage
+		@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+			display: none
+.coverpage-sagradocorazon
+	@media screen and ( max-width: 640px )/*  640px a 0px =====*/
+		padding: 50px 20px
+	padding: 150px 20px 150px 20px
+	box-sizing: border-box
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	align-items: center
+	margin: 0px auto
+	width: var(--sizem)
+	justify-content: center
+	background-image: url('../images/header-msc.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	.slogan
+		margin-top: 20px
+		text-align: center
+		text-transform: uppercase
+		h1
+			color: $m-amarillo
+			font-size: 2.6em
+			@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+				font-size: 1.8em
+		h2
+			color: $blanco
+			font-style: italic
+			font-size: 2.2em
+			margin-top: 10px
+			@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+				font-size: 1.5em
+	a
+		display: block
+		img
+			width: auto
+			height: 80px
+.contenedor-lm-msc
+	box-sizing: border-box
+	padding: 5px
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	width: var(--sizem)
+	justify-content: space-between
+	align-items: center
+	@media screen and ( min-width: 640px ) and (max-width: 1000px )/* valor entre 640 a 1000 */
+		justify-content: center
+	.or-logo-cover
+		.logo
+			width: 75px
+			height: 75px
+			display: block
+			img
+				width: 100%
+				height: auto
+				display: block
+	.or-menum
+		.navbar-me
+			ul.menu
+				li.current_page_item
+					&:after
+						width: 100%
+						content: ''
+						display: block
+						background-color: $m-verde
+						height: 3px
+						width: calc(var(--ttw)/2)
+						position: absolute
+						left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 )
+						bottom: 0px
+						z-index: 100
+						transition: 0.5s ease
+				li
+					&:after
+						content: ''
+						display: block
+						background-color: $m-azul
+						height: 3px
+						width: 0%
+						position: absolute
+						left: 50%
+						bottom: 0px
+						z-index: 100
+						transition: 0.5s ease
+					&:hover
+						&:after
+							content: ''
+							display: block
+							background-color: $m-verde
+							height: 3px
+							width: calc(var(--ttw)/2)
+							position: absolute
+							left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 )
+							bottom: 0px
+							z-index: 100
+							transition: 0.5s ease
+					a
+						color: $m-azul
+						font-family: 'Oswald', sans-serif
+						font-weight: 600
+						text-transform: uppercase
+						font-size: 0.9777em
+						&:hover
+							transition: 0.5s ease
+							color: $m-verde

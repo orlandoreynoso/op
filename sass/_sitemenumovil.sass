@@ -1,0 +1,52 @@
+.e-menu
+	@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+		box-shadow: 10px 0 10px 0 rgba(0,0,0,.3)
+		margin-bottom: 4px
+	.navbar
+		@media screen and ( min-width: 641px ) /*=== ocultar de 641px hasta infinito  para que se muestre el menu =====*/
+			display: none
+		.cuadro-menu
+			padding: 20px
+			display: flex
+			flex-flow: row wrap
+			width: 100%
+			justify-content: space-between
+			align-content: center
+			align-items: center
+			.menu
+				margin-top: 20px
+				li
+					border-bottom: 1px solid $m-verde
+					margin-bottom: 2px
+					a
+						width: 100%
+						display: block
+						text-decoration: none
+						font-size: 1.2em
+						&:before
+							content: ""
+							list-style-type: circle
+							color: green
+						&:hover
+							color: $celeste
+							transition: 0.5s ease
+							margin-left: 10px
+			.logo
+				width: 70px
+				img
+					width: 100%
+		button.navbar-toggler /*== icono verde del menu ==*/
+			border: 1px solid rgba($m-grisoscuro, 0.5)
+			background-color: $grismasclaro
+			transition: 0.5s ease
+			cursor: pointer
+			outline: none
+			.navbar-toggler-icon
+				color: $m-verde
+		.navbar-brand
+			float: left
+			img
+				width: 70px
+				transition: 0.5s ease
+				&:hover
+					opacity: 0.8

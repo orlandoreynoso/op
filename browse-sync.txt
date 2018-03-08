@@ -1,0 +1,16 @@
+npm init >> para generar el package.json
+npm install --save-dev browser-sync
+
+browser-sync start --proxy http://localhost/sincronizando/ --files "./style.css,./*.php,./*.html,./template-parts/*.php,./inc/*.php,./js/*.js,./css/*.css,css/app.css"
+
+Entire feature will be installed on local hard drive
+
+browser-sync start --proxy http://localhost/mscgt/ --files "./*.php,./*.html,./template/*.php,./libs/*.php,./inc/*.php,./js/*.js,./css/*.css,./files/*.php"
+
+http://localhost/mscgt/
+
+npm install gulp gulp-sass browser-sync --save-dev
+
+https://github.com/guldoe/gulp-wordpress/blob/master/gulpfile.js
+https://abalozz.es/actualiza-el-navegador-al-guardar-cambios-con-browser-sync/
+https://www.danielcastanera.com/sass-gulp-gestionar-agilizar-tus-temas-wordpress/
