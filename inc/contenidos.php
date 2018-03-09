@@ -49,14 +49,20 @@ if ( $the_query->have_posts() ) {
         ?>
 <div class="lista">
   <a href="<?php the_permalink(); ?>">
+    <div class="thumb">
     <?php
     if(has_post_thumbnail()){
       the_post_thumbnail('medium');
     }
     else{ ?>
-      <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
+      <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/frailes-dominicos-op.jpg" alt="">
     <?php }       ?>
-    <div class="texto"><span><?php the_title(); ?></span></div>
+      <div class="fecha">
+        <span class="label1"><?php the_time('j  '); ?></span>
+        <span class="label2"><?php the_time('F '); ?></span>
+      </div>
+    </div>
+    <div class="titulo"><span><?php the_title(); ?></span></div>
     <div class="exe"><?php excerpt('20'); ?> </div>
   </a>
 </div>

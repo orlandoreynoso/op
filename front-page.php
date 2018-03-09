@@ -38,7 +38,7 @@ Template Name: coverPage mscgt
 </section>
 <section class="m-iparroquial m-gris">
   <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
-  <?php get_template_part( 'template/cover','seleccionariglesia') ?>
+  <?php get_template_part( 'template/cover','nuestrospilares') ?>
 </section>
 
 <section class="msc10-espiritualidad">

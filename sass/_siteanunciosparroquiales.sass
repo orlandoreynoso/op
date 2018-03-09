@@ -206,6 +206,7 @@
 	box-sizing: border-box
 	padding: 30px
 	width: 100%
+	background-color: $opnoticias
 	.listado
 		min-height: 50px
 		display: flex
@@ -231,48 +232,88 @@
 				text-decoration: none
 				padding: 0px 0px 8px 0px
 				display: block
-				background-color: $blanco
 				margin: 10px
-				border: 1px solid $blanco
+				border: 1px solid $opnoticias
 				&:hover
 					color: $m-rojo
 					transition: 0.5s ease
 					-o-transition: 0.5s ease
 					-webkit-transition: 0.5s ease
-					.texto
-						color: red
-				.texto
+					.titulo
+						color: $opgrisoscuro
+						transition: 0.5s ease
+						span
+							color: $opgrisoscuro
+							transition: 0.5s ease
+					.exe
+						color: $opamarillo
+						transition: 0.5s ease
+				.titulo
 					font-family: $poppins
-					color: $opgrisoscuro
+					color: $opazul
+					font-weight: bold
 					font-size: 0.875em
 					padding: 15px 0px
 					text-align: left
+					transition: 0.5s ease
 					span
 						display: block
-				img
-					width: 100%
-					height: 100%
-					background-size: cover
-					&:hover
+				.thumb
+					background-color: $opazul
+					position: relative
+					box-sizing: border-box
+					img
+						width: 100%
+						height: 100%
+						background-size: cover
 						transition: 0.5s ease
-						opacity: 0.5
+						&:hover
+							transition: 0.5s ease
+							opacity: 0.5
+					.fecha
+						background-color: $opamarillo
+						font-family: $poppins
+						padding: 10px
+						display: flex
+						justify-content: center
+						align-items: center
+						flex-direction: column
+						position: absolute
+						width: auto
+						height: 40px
+						font-size: 0.625em
+						text-align: center
+						box-sizing: border-box
+						bottom: 0
+						right: 0
+						font-weight: bold
+						.label1
+							color: $opgrisoscuro
+							width: 100%
+							text-align: center
+						.label2
+							color: $blanco
+							width: 100%
+							text-align: center
 				.exe
 					font-family: $open
-					color: $opgrisoscuro
+					color: $optexto
 					font-size: 0.875em
 					padding: 0px 0px
 					text-align: left
+					transition: 0.5s ease
 	.titulo-anuncios
 		@include tituloafterop($optexto,$opamarillo,1.500)
 /*====================================================*/
 .m-iparroquial
-	background-color: $m-grisclaro
+	background-color: $blanco
 	box-sizing: border-box
 	padding: 30px
 	width: 100%
 	z-index: 10
 	.titulo-anuncios
-		@include tituloafter($m-azul,$m-rojo)
+		text-transform: uppercase
+		@include tituloafterop($optexto,$opamarillo,1.500)
 /*=============== cuadro de selecciona tu iglesia ====*/
 .m-iparroquial
 	#iglesia
@@ -287,6 +328,7 @@
 			padding: 10px 10px 10px 10px
 			text-align: center
 			box-sizing: border-box
+			overflow: hidden
 			@media screen and (max-width: 640px)
 				width: calc(var(--sizem)/2)
 				padding: 5px
@@ -294,6 +336,8 @@
 				width: var(--sizem)
 			@media screen and (max-width: 320px) /*.. de 600px a 0px */
 				width: var(--sizem)
+			.pilares-ingreso
+				background-color: $blanco
 			a
 				color: $m-azul
 				font-family: 'Oswald', sans-serif
@@ -309,14 +353,78 @@
 					transition: 0.5s ease
 					-o-transition: 0.5s ease
 					-webkit-transition: 0.5s ease
-				span
-					margin-top: 20px
-					display: block
-				img
-					width: 100%
-					height: 100%
-					background-size: cover
-					&:hover
+					.titulo
+						color: $opgrisoscuro
 						transition: 0.5s ease
-						opacity: 0.5
+						span
+							color: $opgrisoscuro
+							transition: 0.5s ease
+					.exe
+						color: $opamarillo
+						transition: 0.5s ease
+				.titulo
+					font-family: $poppins
+					color: $opazul
+					font-weight: bold
+					font-size: 0.875em
+					padding: 15px 0px
+					text-align: center
+					transition: 0.5s ease
+					margin-top: 10px
+					span
+						display: block
+				.thumb
+					background-color: $opazul
+					position: relative
+					box-sizing: border-box
+					--width: 100%
+					&:after
+						content: ''
+						height: 2px
+						width: calc(var(--width)/4)
+						position: absolute
+						background-color: $opgrisoscuro
+						bottom: -15px
+						left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 )
+						display: block
+					img
+						width: 100%
+						height: 100%
+						background-size: cover
+						transition: 0.5s ease
+						&:hover
+							transition: 0.5s ease
+							opacity: 0.5
+					.fecha
+						background-color: $opamarillo
+						font-family: $poppins
+						padding: 10px
+						display: flex
+						justify-content: center
+						align-items: center
+						flex-direction: column
+						position: absolute
+						width: auto
+						height: 40px
+						font-size: 0.625em
+						text-align: center
+						box-sizing: border-box
+						bottom: 0
+						right: 0
+						font-weight: bold
+						.label1
+							color: $opgrisoscuro
+							width: 100%
+							text-align: center
+						.label2
+							color: $blanco
+							width: 100%
+							text-align: center
+				.exe
+					font-family: $roboto
+					color: $optexto2
+					font-size: 0.875em
+					padding: 0px 10px
+					transition: 0.5s ease
+					text-align: center
 /*===============================================================*/
