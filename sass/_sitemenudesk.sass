@@ -1,8 +1,8 @@
 .e-menu
-	background-color: #fff
+	background-color: $opgris
 	width: 100%
 	@media screen and (max-width: 640px) /*  de 640px a 0px =====*/
-		background-color: $blanco
+		background-color: $opgris
 		box-shadow: 0 0 8px 0 rgba(0,0,0,.3)
 	.navbar-me
 		@media screen and ( max-width: 640px )/*  de 640px a 0px =====*/
@@ -49,8 +49,6 @@
 					display: block
 					color: $m-azul
 					text-decoration: none
-					&:hover
-						color: $m-verde
 /*==================Men MSC============ menu desk =============*/
 .e-menu
 	.sticky-wrapper
@@ -64,7 +62,7 @@
 	padding: 20px
 	@media screen and ( max-width: 640px )/* 640px a 0px =====*/
 		padding: 0px
-	background-color: $blanco
+	background-color: $opgris
 	box-shadow: 0 0 8px 0 rgba(0,0,0,.3)
 	-webkit-transition: all .5s ease .15s
 	-moz-transition: all .5s ease .15s
@@ -74,46 +72,8 @@
 	.menu-coverpage
 		@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
 			display: none
-.coverpage-sagradocorazon
-	@media screen and ( max-width: 640px )/*  640px a 0px =====*/
-		padding: 50px 20px
-	padding: 150px 20px 150px 20px
-	box-sizing: border-box
-	display: flex
-	flex-direction: column
-	flex-wrap: wrap
-	align-items: center
-	margin: 0px auto
-	width: var(--sizem)
-	justify-content: center
-	background-image: url('../images/header-msc.jpg')
-	background-position: center
-	background-size: cover
-	background-repeat: no-repeat
-	.slogan
-		margin-top: 20px
-		text-align: center
-		text-transform: uppercase
-		h1
-			color: $m-amarillo
-			font-size: 2.6em
-			@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
-				font-size: 1.8em
-		h2
-			color: $blanco
-			font-style: italic
-			font-size: 2.2em
-			margin-top: 10px
-			@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
-				font-size: 1.5em
-	a
-		display: block
-		img
-			width: auto
-			height: 80px
 .contenedor-lm-msc
 	box-sizing: border-box
-	padding: 5px
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
@@ -123,15 +83,39 @@
 	@media screen and ( min-width: 640px ) and (max-width: 1000px )/* valor entre 640 a 1000 */
 		justify-content: center
 	.or-logo-cover
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.op-slogan
+			padding: 0px
+			text-transform: uppercase
+			text-align: center
+			h2
+				color: $blanco
+				font-size: 1.313em /*21px*/
+				font-family: $poppins
+				@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+					font-size: 1.8em
+			h3
+				color: $opamarillo
+				font-size: 1.250em
+				margin-top: 10px
+				font-family: $open
+				@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+					font-size: 1.5em
 		.logo
-			width: 75px
-			height: 75px
+			width: 100px
+			height: auto
 			display: block
 			img
 				width: 100%
 				height: auto
 				display: block
 	.or-menum
+		margin-top: 10px
 		.navbar-me
 			ul.menu
 				li.current_page_item
@@ -139,7 +123,7 @@
 						width: 100%
 						content: ''
 						display: block
-						background-color: $m-verde
+						background-color: $opamarillo
 						height: 3px
 						width: calc(var(--ttw)/2)
 						position: absolute
@@ -151,7 +135,7 @@
 					&:after
 						content: ''
 						display: block
-						background-color: $m-azul
+						background-color: $opamarillo
 						height: 3px
 						width: 0%
 						position: absolute
@@ -163,7 +147,7 @@
 						&:after
 							content: ''
 							display: block
-							background-color: $m-verde
+							background-color: $opamarillo
 							height: 3px
 							width: calc(var(--ttw)/2)
 							position: absolute
@@ -172,11 +156,11 @@
 							z-index: 100
 							transition: 0.5s ease
 					a
-						color: $m-azul
-						font-family: 'Oswald', sans-serif
-						font-weight: 600
+						color: $blanco
+						font-family: $open
+						font-weight: 300
 						text-transform: uppercase
-						font-size: 0.9777em
+						font-size: 0.875em
 						&:hover
 							transition: 0.5s ease
-							color: $m-verde
+							color: $opamarillo

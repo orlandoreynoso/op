@@ -4,7 +4,7 @@
       <div class="col-md-12">
       <!-- ******************************-->
         <div class="div-logo">
-            <?php logoMsc(); ?>
+            <?php logo_provincia(); ?>
           <div class="slogan">
             <h2>PARROQUIA</h2>
             <h3>NUESTRA SEÑORA DEL SAGRADO CORAZÓN</h3>

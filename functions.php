@@ -109,23 +109,14 @@ add_action( 'wp_enqueue_scripts', 'wpt_register_css' );
 function showMenuboostrap(){
 
     $args = array(
-
         'menu'=> '',
-
         'menu_id' => 'menu-principal', /*Lo que tienen el Ul primero*/
-
         'menu_class' => 'menu nav navbar-nav', /* tambien lo que contiene el  Ul primero*/
-
         'container'=> false,  /*ESto es lo que contiene al menu por ejemplo nav, pero lo quito ya que en el header incluyo el nav para controlarlo.*/
-
         'container_id' =>'azucar',
-
         'container_class' =>'oro',
-
         'before' =>'', //Esto envuelve el a
-
         'after' =>'', // Esto va despues de cada a
-
     );
 
     wp_nav_menu($args);
@@ -175,19 +166,19 @@ wp_nav_menu( array(
 
 function logo(){
 $logo = IMAGES.'/santuario.png'; ?>
-<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Misioneros del sagrado Corazón de Jesús"></a>
+<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Provincia San Vicente Ferrer - Dominicos en Centro América"></a>
 <?php
 }
 
-function logoMsc(){
-$logo = IMAGES.'/logomsc.png'; ?>
-<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Misioneros del sagrado Corazón de Jesús"></a>
+function logo_provincia(){
+$logo = IMAGES.'/logo_provincia.png'; ?>
+<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Provincia San Vicente Ferrer - Dominicos en Centro América"></a>
 <?php
 }
 
 function logoMovil(){
-$logo = IMAGES.'/logomsc.png'; ?>
-<a class="logo navbar-brand text-left" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Misioneros del sagrado Corazón de Jesús"></a>
+$logo = IMAGES.'/logo_provincia.png'; ?>
+<a class="logo navbar-brand text-left" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $logo; ?>" alt="Provincia San Vicente Ferrer - Dominicos en Centro América"></a>
 <?php
 }
 
@@ -200,7 +191,7 @@ function logo(){
 
     echo bloginfo('url');
 
-    echo '"><img src="'.$logo.'" alt="Misioneros del sagrado Corazón de Jesús"></a>';
+    echo '"><img src="'.$logo.'" alt="Provincia San Vicente Ferrer - Dominicos en Centro América"></a>';
 
 }
  */

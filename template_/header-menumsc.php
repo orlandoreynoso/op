@@ -11,7 +11,7 @@
       <div class="row">
         <div class="contenedor-lm-msc">
           <div class="or-logo-cover">
-            <?php logoMsc(); ?>
+            <?php logo_provincia(); ?>
           </div>
           <div class="or-menum">
             <nav class="navbar-me">

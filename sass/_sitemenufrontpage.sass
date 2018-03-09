@@ -1,0 +1,168 @@
+.menufrontpage
+	background-color: $opgris
+	width: 100%
+	@media screen and (max-width: 640px) /*  de 640px a 0px =====*/
+		background-color: $opgris
+		box-shadow: 0 0 8px 0 rgba(0,0,0,.3)
+	.navbar-me
+		@media screen and ( max-width: 640px )/*  de 640px a 0px =====*/
+			display: none
+		ul.menu
+			display: flex
+			flex-flow: row
+			flex-wrap: wrap
+			justify-content: center
+			.current_page_item
+				transition: 0.5s ease
+				&:after
+					width: 100%
+					content: ''
+					display: block
+					background-color: $celeste
+					height: 3px
+					width: calc(var(--ttw)/2)
+					position: absolute
+					left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 )
+					bottom: 0px
+					z-index: 100
+					transition: 0.5s ease
+			li
+				position: relative
+				padding: 0px 0px 0px
+				--ttw: 100%
+				&:hover
+					transition: 0.5s ease
+					&:after
+						width: 100%
+						content: ''
+						display: block
+						background-color: $celeste
+						height: 3px
+						width: calc(var(--sizem)/2)
+						position: absolute
+						left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 )
+						bottom: 0px
+						z-index: 100
+						transition: 0.5s ease
+				a
+					padding: 20px 10px 20px
+					display: block
+					text-decoration: none
+/*==================Men MSC============ menu desk =============*/
+.menufrontpage
+	.sticky-wrapper
+		height: auto !important
+	#deskfrontpage
+		z-index: 99999999!important
+		position: sticky
+		display: block
+		opacity: 1!important
+.deskfrontpage
+	padding: 20px
+	@media screen and ( max-width: 640px )/* 640px a 0px =====*/
+		padding: 0px
+	background-color: $opgris
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.3)
+	-webkit-transition: all .5s ease .15s
+	-moz-transition: all .5s ease .15s
+	-o-transition: all .5s ease .15s
+	-ms-transition: all .5s ease .15s
+	transition: all .5s ease .15s
+	.menu-coverpage
+		@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+			display: none
+.contenedor-logo-menu
+	box-sizing: border-box
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	width: var(--sizem)
+	justify-content: space-between
+	align-items: center
+	@media screen and ( min-width: 640px ) and (max-width: 1000px )/* valor entre 640 a 1000 */
+		justify-content: center
+	.or-logo-cover
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.op-slogan
+			padding: 0px
+			text-transform: uppercase
+			text-align: center
+			h2
+				color: $blanco
+				font-size: 1.313em /*21px*/
+				font-family: $poppins
+				@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+					font-size: 1.8em
+			h3
+				color: $opamarillo
+				font-size: 1.250em
+				margin-top: 10px
+				font-family: $open
+				@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+					font-size: 1.5em
+		.logo
+			width: 100px
+			height: auto
+			display: block
+			img
+				width: 100%
+				height: auto
+				display: block
+	.or-menum
+		width: 100%
+		margin-top: 10px
+		@media screen and ( min-width: 740px )/* ocultarlo de 640px a 0px =====*/
+			display: none
+		.navbar-me
+			ul.menu
+				li.current_page_item
+					&:after
+						width: 100%
+						content: ''
+						display: block
+						background-color: $opamarillo
+						height: 3px
+						width: calc(var(--ttw)/2)
+						position: absolute
+						left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 )
+						bottom: 0px
+						z-index: 100
+						transition: 0.5s ease
+				li
+					&:after
+						content: ''
+						display: block
+						background-color: $opamarillo
+						height: 3px
+						width: 0%
+						position: absolute
+						left: 50%
+						bottom: 0px
+						z-index: 100
+						transition: 0.5s ease
+					&:hover
+						&:after
+							content: ''
+							display: block
+							background-color: $opamarillo
+							height: 3px
+							width: calc(var(--ttw)/2)
+							position: absolute
+							left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 )
+							bottom: 0px
+							z-index: 100
+							transition: 0.5s ease
+					a
+						color: $blanco
+						font-family: $open
+						font-weight: 300
+						text-transform: uppercase
+						font-size: 0.875em
+						&:hover
+							transition: 0.5s ease
+							color: $opamarillo

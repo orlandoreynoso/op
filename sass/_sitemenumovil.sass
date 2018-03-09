@@ -13,36 +13,72 @@
 			justify-content: space-between
 			align-content: center
 			align-items: center
+			.op-slogan
+				padding: 0px
+				text-transform: uppercase
+				text-align: center
+				width: 100%
+				margin-top: 20px
+				h2
+					color: $blanco
+					font-size: 1.313em /*21px*/
+					font-family: $poppins
+					@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+						font-size: 1.8em
+				h3
+					color: $opamarillo
+					font-size: 1.250em
+					margin-top: 15px
+					margin-bottom: 15px
+					font-family: $open
+					@media screen and ( max-width: 640px )/* ocultarlo de 640px a 0px =====*/
+						font-size: 1.5em
 			.menu
 				margin-top: 20px
 				li
-					border-bottom: 1px solid $m-verde
+					border-bottom: 1px solid $opamarillo
 					margin-bottom: 2px
 					a
 						width: 100%
 						display: block
 						text-decoration: none
 						font-size: 1.2em
+						color: $blanco
 						&:before
 							content: ""
 							list-style-type: circle
 							color: green
 						&:hover
-							color: $celeste
+							color: $opamarillo
 							transition: 0.5s ease
 							margin-left: 10px
-			.logo
-				width: 70px
-				img
-					width: 100%
+			.movilmenuop
+				width: 100%
+				display: flex
+				flex-wrap: wrap
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				margin-top: 10px
+				.logo
+					width: 100px
+					height: auto
+					display: block
+					img
+						width: 100%
+						height: auto
+						display: block
 		button.navbar-toggler /*== icono verde del menu ==*/
 			border: 1px solid rgba($m-grisoscuro, 0.5)
-			background-color: $grismasclaro
+			background-color: $blanco
 			transition: 0.5s ease
 			cursor: pointer
 			outline: none
 			.navbar-toggler-icon
-				color: $m-verde
+				color: $opamarillo
+			&:hover
+				background-color: $opamarillo
+				transition: 0.5s ease
 		.navbar-brand
 			float: left
 			img

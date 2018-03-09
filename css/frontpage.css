@@ -1,0 +1,263 @@
+:root {
+  --sizem: 100%; }
+
+.gridx {
+  padding: 20px; }
+
+.menufrontpage {
+  background-color: #354252;
+  width: 100%; }
+  @media screen and (max-width: 640px) {
+    .menufrontpage {
+      background-color: #354252;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3); } }
+  @media screen and (max-width: 640px) {
+    .menufrontpage .navbar-me {
+      display: none; } }
+  .menufrontpage .navbar-me ul.menu {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .menufrontpage .navbar-me ul.menu .current_page_item {
+      transition: 0.5s ease; }
+      .menufrontpage .navbar-me ul.menu .current_page_item:after {
+        width: 100%;
+        content: "";
+        display: block;
+        background-color: #009FFF;
+        height: 3px;
+        width: calc(var(--ttw)/2);
+        position: absolute;
+        left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 );
+        bottom: 0px;
+        z-index: 100;
+        transition: 0.5s ease; }
+    .menufrontpage .navbar-me ul.menu li {
+      position: relative;
+      padding: 0px 0px 0px;
+      --ttw: 100%; }
+      .menufrontpage .navbar-me ul.menu li:hover {
+        transition: 0.5s ease; }
+        .menufrontpage .navbar-me ul.menu li:hover:after {
+          width: 100%;
+          content: "";
+          display: block;
+          background-color: #009FFF;
+          height: 3px;
+          width: calc(var(--sizem)/2);
+          position: absolute;
+          left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 );
+          bottom: 0px;
+          z-index: 100;
+          transition: 0.5s ease; }
+      .menufrontpage .navbar-me ul.menu li a {
+        padding: 20px 10px 20px;
+        display: block;
+        color: #293449;
+        text-decoration: none; }
+        .menufrontpage .navbar-me ul.menu li a:hover {
+          color: #46b271; }
+
+/*==================Men MSC============ menu desk ============= */
+.menufrontpage .sticky-wrapper {
+  height: auto !important; }
+.menufrontpage #deskfrontpage {
+  z-index: 99999999 !important;
+  position: sticky;
+  display: block;
+  opacity: 1 !important; }
+
+.deskfrontpage {
+  padding: 20px;
+  background-color: #354252;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s ease 0.15s;
+  -moz-transition: all 0.5s ease 0.15s;
+  -o-transition: all 0.5s ease 0.15s;
+  -ms-transition: all 0.5s ease 0.15s;
+  transition: all 0.5s ease 0.15s; }
+  @media screen and (max-width: 640px) {
+    .deskfrontpage {
+      padding: 0px; } }
+  @media screen and (max-width: 640px) {
+    .deskfrontpage .menu-coverpage {
+      display: none; } }
+
+.coverpage-sagradocorazon {
+  padding: 150px 20px 150px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px auto;
+  width: var(--sizem);
+  justify-content: center;
+  background-image: url("../images/header-msc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 640px) {
+    .coverpage-sagradocorazon {
+      padding: 50px 20px; } }
+  .coverpage-sagradocorazon .slogan {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase; }
+    .coverpage-sagradocorazon .slogan h1 {
+      color: #f7b32b;
+      font-size: 2.6em; }
+      @media screen and (max-width: 640px) {
+        .coverpage-sagradocorazon .slogan h1 {
+          font-size: 1.8em; } }
+    .coverpage-sagradocorazon .slogan h2 {
+      color: #ffffff;
+      font-style: italic;
+      font-size: 2.2em;
+      margin-top: 10px; }
+      @media screen and (max-width: 640px) {
+        .coverpage-sagradocorazon .slogan h2 {
+          font-size: 1.5em; } }
+  .coverpage-sagradocorazon a {
+    display: block; }
+    .coverpage-sagradocorazon a img {
+      width: auto;
+      height: 80px; }
+
+.contenedor-logo-menu {
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: var(--sizem);
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (min-width: 640px) and (max-width: 1000px) {
+    .contenedor-logo-menu {
+      justify-content: center; } }
+  .contenedor-logo-menu .or-logo-cover {
+    background-color: red;
+    width: 100%; }
+    .contenedor-logo-menu .or-logo-cover .op-slogan {
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px; }
+      .contenedor-logo-menu .or-logo-cover .op-slogan h2 {
+        color: #ffffff; }
+      .contenedor-logo-menu .or-logo-cover .op-slogan h3 {
+        color: #f1b821; }
+    .contenedor-logo-menu .or-logo-cover .logo {
+      width: 100%;
+      height: 75px;
+      display: block;
+      background-color: red;
+      padding: 10px; }
+      .contenedor-logo-menu .or-logo-cover .logo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: green;
+        padding: 20px; }
+  @media screen and (min-width: 740px) {
+    .contenedor-logo-menu .or-menum {
+      display: none; } }
+  .contenedor-logo-menu .or-menum .navbar-me ul.menu li.current_page_item:after {
+    width: 100%;
+    content: "";
+    display: block;
+    background-color: #46b271;
+    height: 3px;
+    width: calc(var(--ttw)/2);
+    position: absolute;
+    left: calc( calc( 100% - ( calc(var(--ttw)/2)) ) / 2 );
+    bottom: 0px;
+    z-index: 100;
+    transition: 0.5s ease; }
+  .contenedor-logo-menu .or-menum .navbar-me ul.menu li:after {
+    content: "";
+    display: block;
+    background-color: #293449;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    z-index: 100;
+    transition: 0.5s ease; }
+  .contenedor-logo-menu .or-menum .navbar-me ul.menu li:hover:after {
+    content: "";
+    display: block;
+    background-color: #46b271;
+    height: 3px;
+    width: calc(var(--ttw)/2);
+    position: absolute;
+    left: calc( calc( 100% - ( calc(var(--sizem)/2)) ) / 2 );
+    bottom: 0px;
+    z-index: 100;
+    transition: 0.5s ease; }
+  .contenedor-logo-menu .or-menum .navbar-me ul.menu li a {
+    color: #293449;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9777em; }
+    .contenedor-logo-menu .or-menum .navbar-me ul.menu li a:hover {
+      transition: 0.5s ease;
+      color: #46b271; }
+
+@media screen and (max-width: 640px) {
+  .menufrontpage {
+    box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 4px; } }
+@media screen and (min-width: 641px) {
+  .menufrontpage .navbar {
+    display: none; } }
+.menufrontpage .navbar .cuadro-menu {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center; }
+  .menufrontpage .navbar .cuadro-menu .menu {
+    margin-top: 20px; }
+    .menufrontpage .navbar .cuadro-menu .menu li {
+      border-bottom: 1px solid #46b271;
+      margin-bottom: 2px; }
+      .menufrontpage .navbar .cuadro-menu .menu li a {
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        font-size: 1.2em; }
+        .menufrontpage .navbar .cuadro-menu .menu li a:before {
+          content: "";
+          list-style-type: circle;
+          color: green; }
+        .menufrontpage .navbar .cuadro-menu .menu li a:hover {
+          color: #009FFF;
+          transition: 0.5s ease;
+          margin-left: 10px; }
+  .menufrontpage .navbar .cuadro-menu .logo {
+    width: 70px; }
+    .menufrontpage .navbar .cuadro-menu .logo img {
+      width: 100%; }
+.menufrontpage .navbar button.navbar-toggler {
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  background-color: #e9e9e9;
+  transition: 0.5s ease;
+  cursor: pointer;
+  outline: none; }
+  .menufrontpage .navbar button.navbar-toggler .navbar-toggler-icon {
+    color: #46b271; }
+.menufrontpage .navbar .navbar-brand {
+  float: left; }
+  .menufrontpage .navbar .navbar-brand img {
+    width: 70px;
+    transition: 0.5s ease; }
+    .menufrontpage .navbar .navbar-brand img:hover {
+      opacity: 0.8; }
+
+/*# sourceMappingURL=frontpage.css.map */

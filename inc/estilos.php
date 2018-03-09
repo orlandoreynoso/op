@@ -3,7 +3,7 @@
 function estilos_template(){
 
 	// Registrar los estilos
-  	wp_register_style('fonts_google', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,600,700', array(), '1.0.0');
+  	wp_register_style('fonts_google', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:300,400,700|Roboto:300,400,700', array(), '1.0.0');
   	wp_register_style('bootstrap', get_template_directory_uri().'/css/bootstrap.min.css', array(), '4.0.0');
 	wp_register_style('style', get_template_directory_uri().'/style.css', array('bootstrap'), '1.0');
 	wp_register_style('estilo', get_template_directory_uri().'/css/estilo.css', array('bootstrap'), '7.0');
@@ -42,6 +42,23 @@ function estilos_template(){
 }
 
 add_action('wp_enqueue_scripts','estilos_template');
+/*
+function mqw_scripts_paginas(){
+  if(is_page('inicio')){
 
+    wp_register_style('frontpage', get_template_directory_uri().'/css/frontpage.css', array('bootstrap'), '4.7.0');
+    wp_enqueue_style('frontpage');
 
+/*          wp_register_script('instafeed', get_template_directory_uri().'/js/instafeed.min.js', array('jquery'),'2.9.0', true);
+          wp_register_script('magnific', get_template_directory_uri().'/js/magnific.min.js', array('jquery'),'2.9.0', true);
+          wp_register_script('senderfeed', get_template_directory_uri().'/js/senderfeed.js', array('jquery'),'2.9.0', true);
+          wp_enqueue_script('instafeed');
+          wp_enqueue_script('magnific');
+          wp_enqueue_script('senderfeed'); *//*
+
+      }
+}
+add_action('template_redirect','mqw_scripts_paginas');
+
+*/
 ?>
