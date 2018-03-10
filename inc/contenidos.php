@@ -1,4 +1,63 @@
 <?php
+function construir_presencia($id){
+  $args = array(
+  //'pagename' => 'donde-estamos-en-centroamerica',
+  'post_type' => 'any',
+  'post_status' => 'publish',
+  'post_parent' => $id,
+  //Order & Orderby Parameters
+  'order'               => 'DESC',
+  'orderby'             => 'date',
+  //Pagination Parameters
+  'posts_per_page'         => -1,
+  );
+
+    return $args;
+}
+
+function presencia($id){ ?>
+  <?php $the_query = new WP_Query(construir_presencia($id));  ?>
+    <?php
+    $id = get_permalink($page);
+    $title = get_the_title($page );
+     while($the_query->have_posts()) : $the_query->the_post();  ?>
+    <div class="lista">
+      <div class="titulo">
+        <h3><?php the_title();  ?></h3>
+      </div>
+      <div class="listado">
+        <?php lista_presencia(get_the_id()); ?>
+      </div>
+    </div>
+<?php
+  endwhile;
+    wp_reset_postdata();
+    ?>
+  <?php
+}
+
+function lista_presencia($id){ ?>
+  <?php $the_query = new WP_Query(construir_presencia($id));  ?>
+
+    <?php
+    $id = get_permalink($page);
+    $title = get_the_title($page );
+     while($the_query->have_posts()) : $the_query->the_post();  ?>
+     <a class_="item" href="<?php the_permalink(); ?>" class="cat">
+       <i class="fa fa-angle-double-right"></i>
+       <?php the_title();  ?>
+     </a>
+
+<?php
+  endwhile;
+    wp_reset_postdata();
+    ?>
+
+  <?php
+}
+
+
+
 function contenidosPorNombre($ptipo, $nombre, $npaginas){
 
   $args = array(

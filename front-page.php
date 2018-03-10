@@ -40,7 +40,16 @@ Template Name: coverPage mscgt
   <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
   <?php get_template_part( 'template/cover','nuestrospilares') ?>
 </section>
-
+<section class="frame-rosario">
+  <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
+  <?php // get_template_part( 'template/cover','nuestrospilares') ?>
+</section>
+<section class="framevidamision">
+  <?php get_template_part( 'template/cover','vidamision') ?>
+</section>
+<section class="framepresencia">
+  <?php get_template_part( 'template/cover','presencia') ?>
+</section>
 <section class="msc10-espiritualidad">
   <?php get_template_part( 'template/cover', 'espiritualidad'); ?>
 </section>

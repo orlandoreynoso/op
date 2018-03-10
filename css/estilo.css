@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --sizem: 100%; }
 
@@ -1081,6 +1082,134 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 100; }
 
 /*======= vien de coverpage.sass */
+/*======== presencia =========== */
+.framepresencia {
+  background-color: #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (max-width: 640px) {
+    .framepresencia {
+      padding: 30px 50px; } }
+  .framepresencia .imgpresencia {
+    background-color: #293449;
+    padding: 0px;
+    margin: 0px; }
+    .framepresencia .imgpresencia .thumb {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease;
+      display: block; }
+      .framepresencia .imgpresencia .thumb:hover {
+        transition: 0.5s ease;
+        opacity: 0.7; }
+      .framepresencia .imgpresencia .thumb img {
+        width: 100%;
+        height: 100%; }
+  .framepresencia .contenidopresencia {
+    color: #ffffff;
+    padding-left: 30px; }
+    .framepresencia .contenidopresencia .titulo-presencia {
+      text-transform: uppercase;
+      margin-top: 20px;
+      padding: 10px;
+      width: var(--sizem);
+      text-align: left;
+      box-sizing: border-box;
+      margin-bottom: 30px; }
+      .framepresencia .contenidopresencia .titulo-presencia a {
+        text-decoration: none;
+        transition: 0.5s ease; }
+        .framepresencia .contenidopresencia .titulo-presencia a:hover {
+          transition: 0.5s ease;
+          color: #f1b821; }
+      .framepresencia .contenidopresencia .titulo-presencia h3, .framepresencia .contenidopresencia .titulo-presencia a {
+        position: relative;
+        --width: 50%;
+        color: #ffffff;
+        font-weight: bold;
+        z-index: 9;
+        font-size: 1.25em; }
+        .framepresencia .contenidopresencia .titulo-presencia h3::after, .framepresencia .contenidopresencia .titulo-presencia a::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: calc(var(--width)/2);
+          position: absolute;
+          left: 0;
+          bottom: -0.8em;
+          background-color: #f1b821;
+          z-index: 100; }
+    .framepresencia .contenidopresencia .lugares {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .framepresencia .contenidopresencia .lugares .lista {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px; }
+        .framepresencia .contenidopresencia .lugares .lista .titulo {
+          color: #ffffff;
+          width: 30%;
+          display: block;
+          text-transform: uppercase;
+          padding: 10px;
+          text-align: left;
+          box-sizing: border-box;
+          margin-bottom: 30px; }
+          @media screen and (max-width: 640px) {
+            .framepresencia .contenidopresencia .lugares .lista .titulo {
+              width: 100%; } }
+          .framepresencia .contenidopresencia .lugares .lista .titulo a {
+            text-decoration: none;
+            transition: 0.5s ease; }
+            .framepresencia .contenidopresencia .lugares .lista .titulo a:hover {
+              transition: 0.5s ease;
+              color: #f1b821; }
+          .framepresencia .contenidopresencia .lugares .lista .titulo h3, .framepresencia .contenidopresencia .lugares .lista .titulo a {
+            position: relative;
+            --width: 100%;
+            color: #ffffff;
+            font-weight: bold;
+            z-index: 9;
+            font-size: 0.875em; }
+            .framepresencia .contenidopresencia .lugares .lista .titulo h3::after, .framepresencia .contenidopresencia .lugares .lista .titulo a::after {
+              content: "";
+              display: block;
+              height: 3px;
+              width: calc(var(--width)/4);
+              position: absolute;
+              left: 0;
+              bottom: -0.8em;
+              background-color: #f1b821;
+              z-index: 100; }
+        .framepresencia .contenidopresencia .lugares .lista .listado {
+          width: 65%;
+          color: #ffffff;
+          margin-bottom: 40px;
+          padding-top: 5px; }
+          @media screen and (max-width: 640px) {
+            .framepresencia .contenidopresencia .lugares .lista .listado {
+              width: 100%; } }
+          .framepresencia .contenidopresencia .lugares .lista .listado a {
+            color: #ffffff;
+            display: inline-block;
+            margin-bottom: 2px;
+            margin-right: 10px;
+            font-size: 1em; }
+            .framepresencia .contenidopresencia .lugares .lista .listado a .fa {
+              color: #f1b821; }
+
 /*== mensaje provincial */
 .frameprovincial {
   background-color: #000000;
@@ -1292,7 +1421,7 @@ input[type=number]::-webkit-outer-spin-button {
             margin-bottom: 20px; } }
         .frameopveritas .veritas .v_ingreso .btn-ingresar:hover {
           background-color: #ffffff;
-          color: #f1b821;
+          color: #333333;
           transition: 0.5s ease; }
 
 /*--- ultimasnoticias ==== */
@@ -1458,6 +1587,15 @@ input[type=number]::-webkit-outer-spin-button {
         z-index: 100; }
 
 /*=============== cuadro de selecciona tu iglesia ==== */
+.m-iparroquial .contenidoframe {
+  color: #252525;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 150px;
+  text-align: center; }
+  @media screen and (max-width: 640px) {
+    .m-iparroquial .contenidoframe {
+      padding: 20px 40px; } }
 .m-iparroquial #iglesia {
   min-height: 50px;
   display: flex;
@@ -1485,8 +1623,6 @@ input[type=number]::-webkit-outer-spin-button {
       background-color: #ffffff; }
     .m-iparroquial #iglesia #div1 a {
       color: #293449;
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase;
       text-decoration: none;
       padding: 0px 0px 8px 0px;
       display: block;
@@ -1567,13 +1703,246 @@ input[type=number]::-webkit-outer-spin-button {
             text-align: center; }
       .m-iparroquial #iglesia #div1 a .exe {
         font-family: "Roboto", sans-serif;
-        color: #b0b0b0;
-        font-size: 0.875em;
+        color: #252525;
+        font-size: 1em;
         padding: 0px 10px;
         transition: 0.5s ease;
-        text-align: center; }
+        text-align: center;
+        text-transform: inherit; }
 
-/*=============================================================== */
+/*=============== fondo el sorasio========================================= */
+.frame-rosario {
+  background-image: url("../images/santodomingo.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 420px; }
+
+/*===================== Vida y Misión ======================== */
+/*--- ultimasnoticias ==== */
+.framevidamision {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 100%; }
+  .framevidamision .contenidoframe {
+    color: #252525;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    text-align: center; }
+  .framevidamision #iglesia {
+    min-height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: center; }
+    .framevidamision #iglesia .vidamision {
+      min-height: 250px;
+      padding: 20px;
+      box-sizing: border-box; }
+      .framevidamision #iglesia .vidamision .vida .thumb {
+        width: 250px;
+        transition: 0.5s ease; }
+        @media screen and (max-width: 768px) {
+          .framevidamision #iglesia .vidamision .vida .thumb {
+            width: 90%;
+            margin: 0px auto;
+            text-align: center; } }
+        .framevidamision #iglesia .vidamision .vida .thumb:hover {
+          opacity: 0.7;
+          transition: 0.5s ease; }
+        .framevidamision #iglesia .vidamision .vida .thumb img {
+          display: block;
+          width: 100%; }
+      .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp {
+        text-transform: uppercase;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+        width: var(--sizem);
+        text-align: left;
+        box-sizing: border-box;
+        margin-bottom: 30px; }
+        .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp a {
+          text-decoration: none;
+          transition: 0.5s ease; }
+          .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp a:hover {
+            transition: 0.5s ease;
+            color: #f1b821; }
+        .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp h3, .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp a {
+          position: relative;
+          --width: 50%;
+          color: #535353;
+          font-weight: bold;
+          z-index: 9;
+          font-size: 1.125em; }
+          .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp h3::after, .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp a::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: calc(var(--width)/2);
+            position: absolute;
+            left: 0;
+            bottom: -0.8em;
+            background-color: #f1b821;
+            z-index: 100; }
+        @media screen and (max-width: 768px) {
+          .framevidamision #iglesia .vidamision .vida .contenido .titulo-cp {
+            margin-top: 15px; } }
+      .framevidamision #iglesia .vidamision .vida .contenido ul li {
+        list-style: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.875em;
+        margin-bottom: 10px;
+        transition: 0.5s ease; }
+        .framevidamision #iglesia .vidamision .vida .contenido ul li:hover {
+          padding-left: 4px;
+          transition: 0.5s ease; }
+        .framevidamision #iglesia .vidamision .vida .contenido ul li a {
+          color: #333333;
+          transition: 0.5s ease;
+          text-decoration: none; }
+          .framevidamision #iglesia .vidamision .vida .contenido ul li a .fa-angle-double-right {
+            color: #f1b821;
+            margin-right: 4px; }
+          .framevidamision #iglesia .vidamision .vida .contenido ul li a:hover {
+            transition: 0.5s ease;
+            color: #293449; }
+    .framevidamision #iglesia #div1 {
+      width: calc(var(--sizem)/4);
+      min-height: 150px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      box-sizing: border-box;
+      overflow: hidden; }
+      @media screen and (max-width: 640px) {
+        .framevidamision #iglesia #div1 {
+          width: calc(var(--sizem)/2);
+          padding: 5px; } }
+      @media screen and (max-width: 480px) {
+        .framevidamision #iglesia #div1 {
+          width: var(--sizem); } }
+      @media screen and (max-width: 320px) {
+        .framevidamision #iglesia #div1 {
+          width: var(--sizem); } }
+      .framevidamision #iglesia #div1 .pilares-ingreso {
+        background-color: #ffffff; }
+      .framevidamision #iglesia #div1 a {
+        color: #293449;
+        text-decoration: none;
+        padding: 0px 0px 8px 0px;
+        display: block;
+        background-color: #ffffff;
+        margin: 10px;
+        border: 1px solid #ffffff; }
+        .framevidamision #iglesia #div1 a:hover {
+          color: #b20013;
+          transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          -webkit-transition: 0.5s ease; }
+          .framevidamision #iglesia #div1 a:hover .titulo {
+            color: #333333;
+            transition: 0.5s ease; }
+            .framevidamision #iglesia #div1 a:hover .titulo span {
+              color: #333333;
+              transition: 0.5s ease; }
+          .framevidamision #iglesia #div1 a:hover .exe {
+            color: #f1b821;
+            transition: 0.5s ease; }
+        .framevidamision #iglesia #div1 a .titulo {
+          font-family: "Poppins", sans-serif;
+          color: #293449;
+          font-weight: bold;
+          font-size: 0.875em;
+          padding: 15px 0px;
+          text-align: center;
+          transition: 0.5s ease;
+          margin-top: 10px; }
+          .framevidamision #iglesia #div1 a .titulo span {
+            display: block; }
+        .framevidamision #iglesia #div1 a .thumb {
+          background-color: #293449;
+          position: relative;
+          box-sizing: border-box;
+          --width: 100%; }
+          .framevidamision #iglesia #div1 a .thumb:after {
+            content: "";
+            height: 2px;
+            width: calc(var(--width)/4);
+            position: absolute;
+            background-color: #333333;
+            bottom: -15px;
+            left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 );
+            display: block; }
+          .framevidamision #iglesia #div1 a .thumb img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            transition: 0.5s ease; }
+            .framevidamision #iglesia #div1 a .thumb img:hover {
+              transition: 0.5s ease;
+              opacity: 0.5; }
+          .framevidamision #iglesia #div1 a .thumb .fecha {
+            background-color: #f1b821;
+            font-family: "Poppins", sans-serif;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            width: auto;
+            height: 40px;
+            font-size: 0.625em;
+            text-align: center;
+            box-sizing: border-box;
+            bottom: 0;
+            right: 0;
+            font-weight: bold; }
+            .framevidamision #iglesia #div1 a .thumb .fecha .label1 {
+              color: #333333;
+              width: 100%;
+              text-align: center; }
+            .framevidamision #iglesia #div1 a .thumb .fecha .label2 {
+              color: #ffffff;
+              width: 100%;
+              text-align: center; }
+        .framevidamision #iglesia #div1 a .exe {
+          font-family: "Roboto", sans-serif;
+          color: #252525;
+          font-size: 1em;
+          padding: 0px 10px;
+          transition: 0.5s ease;
+          text-align: center;
+          text-transform: inherit; }
+  .framevidamision .titulo-anuncios {
+    text-transform: uppercase;
+    padding: 10px;
+    width: var(--sizem);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 30px; }
+    .framevidamision .titulo-anuncios h3 {
+      position: relative;
+      margin: auto;
+      --width: 20%;
+      color: #535353;
+      font-weight: bold;
+      z-index: 9;
+      font-size: 1.5em; }
+      .framevidamision .titulo-anuncios h3::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: calc(var(--width)/2);
+        position: absolute;
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        bottom: -0.8em;
+        background-color: #f1b821;
+        z-index: 100; }
+
 .section-bienvenida {
   width: var(--sizem);
   padding: 20px;

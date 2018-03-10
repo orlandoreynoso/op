@@ -1,5 +1,75 @@
 /*======= vien de coverpage.sass*/
-
+/*======== presencia ===========*/
+.framepresencia
+	background-color: $negro
+	box-sizing: border-box
+	display: flex
+	flex-flow: row wrap
+	box-sizing: border-box
+	justify-content: center
+	align-items: center
+	@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+		padding: 30px 50px
+	.imgpresencia
+		background-color: $opazul
+		padding: 0px
+		margin: 0px
+		.thumb
+			width: 100%
+			height: 100%
+			transition: 0.5s ease
+			display: block
+			&:hover
+				transition: 0.5s ease
+				opacity: 0.7
+			img
+				width: 100%
+				height: 100%
+	.contenidopresencia
+		color: $blanco
+		padding-left: 30px
+		.titulo-presencia
+			text-transform: uppercase
+			margin-top: 20px
+			@include tituloplanes($blanco,$opamarillo,1.250)
+		.lugares
+			width: 100%
+			box-sizing: border-box
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			.lista
+				width: 100%
+				margin-bottom: 10px
+				box-sizing: border-box
+				box-sizing: border-box
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				margin-top: 20px
+				.titulo
+					color: $blanco
+					width: 30%
+					display: block
+					@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+						width: 100%
+					text-transform: uppercase
+					@include titulopresencia($blanco,$opamarillo,0.875,25)
+				.listado
+					width: 65%
+					color: $blanco
+					margin-bottom: 40px
+					padding-top: 5px
+					@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+						width: 100%
+					a
+						color: $blanco
+						display: inline-block
+						margin-bottom: 2px
+						margin-right: 10px
+						font-size: 1em
+						.fa
+							color: $opamarillo
 /*== mensaje provincial*/
 .frameprovincial
 	background-color: $negro
@@ -199,7 +269,7 @@
 					margin-bottom: 20px
 				&:hover
 					background-color: $blanco
-					color: $opamarillo
+					color: $opgrisoscuro
 					transition: 0.5s ease
 /*--- ultimasnoticias ====*/
 .frameultimasnoticias
@@ -316,6 +386,14 @@
 		@include tituloafterop($optexto,$opamarillo,1.500)
 /*=============== cuadro de selecciona tu iglesia ====*/
 .m-iparroquial
+	.contenidoframe
+		color: $opgriso
+		width: 100%
+		box-sizing: border-box
+		padding: 20px 150px
+		text-align: center
+		@media screen and (max-width: 640px)
+			padding: 20px 40px
 	#iglesia
 		min-height: 50px
 		display: flex
@@ -340,8 +418,6 @@
 				background-color: $blanco
 			a
 				color: $m-azul
-				font-family: 'Oswald', sans-serif
-				text-transform: uppercase
 				text-decoration: none
 				padding: 0px 0px 8px 0px
 				display: block
@@ -422,9 +498,190 @@
 							text-align: center
 				.exe
 					font-family: $roboto
-					color: $optexto2
-					font-size: 0.875em
+					color: $opgriso
+					font-size: 1em
 					padding: 0px 10px
 					transition: 0.5s ease
 					text-align: center
-/*===============================================================*/
+					text-transform: inherit
+/*=============== fondo el sorasio=========================================*/
+.frame-rosario
+	background-image: url('../images/santodomingo.jpg')
+	background-position: center
+	background-size: 100%
+	background-attachment: fixed
+	background-repeat: no-repeat
+	width: 100%
+	min-height: 420px
+/*===================== Vida y Misión ========================*/
+/*--- ultimasnoticias ====*/
+.framevidamision
+	box-sizing: border-box
+	padding: 30px
+	width: 100%
+	.contenidoframe
+		color: $opgriso
+		width: 100%
+		box-sizing: border-box
+		padding: 20px 40px
+		text-align: center
+	#iglesia
+		min-height: 50px
+		display: flex
+		flex-flow: row wrap
+		box-sizing: border-box
+		justify-content: center
+		.vidamision
+			min-height: 250px
+			padding: 20px
+			box-sizing: border-box
+			.vida
+				.thumb
+					width: 250px
+					transition: 0.5s ease
+					@media screen and (max-width: 768px) /* 768 a 0px*/
+						width: 90%
+						margin: 0px auto
+						text-align: center
+					&:hover
+						opacity: 0.7
+						transition: 0.5s ease
+					img
+						display: block
+						width: 100%
+				.contenido
+					.titulo-cp
+						text-transform: uppercase
+						text-align: left
+						font-family: $roboto
+						@include tituloplanes($optexto,$opamarillo,1.125)
+						@media screen and (max-width: 768px) /* 480 a 0px*/
+							margin-top: 15px
+					ul
+						li
+							list-style: none
+							font-family: $poppins
+							font-size: 0.875em
+							margin-bottom: 10px
+							transition: 0.5s ease
+							&:hover
+								padding-left: 4px
+								transition: 0.5s ease
+							a
+								color: $opgrisoscuro
+								transition: 0.5s ease
+								text-decoration: none
+								.fa-angle-double-right
+									color: $opamarillo
+									margin-right: 4px
+								&:hover
+									transition: 0.5s ease
+									color: $opazul
+			.mision
+		#div1
+			width: calc(var(--sizem)/4)
+			min-height: 150px
+			padding: 10px 10px 10px 10px
+			text-align: center
+			box-sizing: border-box
+			overflow: hidden
+			@media screen and (max-width: 640px)
+				width: calc(var(--sizem)/2)
+				padding: 5px
+			@media screen and (max-width: 480px) /* 480 a 0px*/
+				width: var(--sizem)
+			@media screen and (max-width: 320px) /*.. de 600px a 0px */
+				width: var(--sizem)
+			.pilares-ingreso
+				background-color: $blanco
+			a
+				color: $m-azul
+				text-decoration: none
+				padding: 0px 0px 8px 0px
+				display: block
+				background-color: $blanco
+				margin: 10px
+				border: 1px solid $blanco
+				&:hover
+					color: $m-rojo
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
+					.titulo
+						color: $opgrisoscuro
+						transition: 0.5s ease
+						span
+							color: $opgrisoscuro
+							transition: 0.5s ease
+					.exe
+						color: $opamarillo
+						transition: 0.5s ease
+				.titulo
+					font-family: $poppins
+					color: $opazul
+					font-weight: bold
+					font-size: 0.875em
+					padding: 15px 0px
+					text-align: center
+					transition: 0.5s ease
+					margin-top: 10px
+					span
+						display: block
+				.thumb
+					background-color: $opazul
+					position: relative
+					box-sizing: border-box
+					--width: 100%
+					&:after
+						content: ''
+						height: 2px
+						width: calc(var(--width)/4)
+						position: absolute
+						background-color: $opgrisoscuro
+						bottom: -15px
+						left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 )
+						display: block
+					img
+						width: 100%
+						height: 100%
+						background-size: cover
+						transition: 0.5s ease
+						&:hover
+							transition: 0.5s ease
+							opacity: 0.5
+					.fecha
+						background-color: $opamarillo
+						font-family: $poppins
+						padding: 10px
+						display: flex
+						justify-content: center
+						align-items: center
+						flex-direction: column
+						position: absolute
+						width: auto
+						height: 40px
+						font-size: 0.625em
+						text-align: center
+						box-sizing: border-box
+						bottom: 0
+						right: 0
+						font-weight: bold
+						.label1
+							color: $opgrisoscuro
+							width: 100%
+							text-align: center
+						.label2
+							color: $blanco
+							width: 100%
+							text-align: center
+				.exe
+					font-family: $roboto
+					color: $opgriso
+					font-size: 1em
+					padding: 0px 10px
+					transition: 0.5s ease
+					text-align: center
+					text-transform: inherit
+	.titulo-anuncios
+		text-transform: uppercase
+		@include tituloafterop($optexto,$opamarillo,1.500)
