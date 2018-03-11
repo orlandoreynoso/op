@@ -44,8 +44,8 @@ function lista_presencia($id){ ?>
     $title = get_the_title($page );
      while($the_query->have_posts()) : $the_query->the_post();  ?>
      <a class_="item" href="<?php the_permalink(); ?>" class="cat">
-       <i class="fa fa-angle-double-right"></i>
-       <?php the_title();  ?>
+       <!-- i class="fa fa-angle-double-right"></i -->       
+       <?php the_title( '',',') ?>
      </a>
 
 <?php

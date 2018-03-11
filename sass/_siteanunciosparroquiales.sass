@@ -67,9 +67,15 @@
 						display: inline-block
 						margin-bottom: 2px
 						margin-right: 10px
-						font-size: 1em
+						font-family: $poppins
+						font-size: 0.875em
+						transition: 0.5s ease
+						text-decoration: none
 						.fa
 							color: $opamarillo
+						&:hover
+							color: $opamarillo
+							transition: 0.5s ease
 /*== mensaje provincial*/
 .frameprovincial
 	background-color: $negro
@@ -384,6 +390,7 @@
 	.titulo-anuncios
 		text-transform: uppercase
 		@include tituloafterop($optexto,$opamarillo,1.500)
+/*======== Familia Dominicana =============*/
 /*=============== cuadro de selecciona tu iglesia ====*/
 .m-iparroquial
 	.contenidoframe

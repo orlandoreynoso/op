@@ -50,6 +50,11 @@ Template Name: coverPage mscgt
 <section class="framepresencia">
   <?php get_template_part( 'template/cover','presencia') ?>
 </section>
+<section class="m-iparroquial m-gris">
+  <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
+  <?php get_template_part( 'template/cover','familia') ?>
+</section>
+
 <section class="msc10-espiritualidad">
   <?php get_template_part( 'template/cover', 'espiritualidad'); ?>
 </section>

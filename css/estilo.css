@@ -1206,9 +1206,15 @@ input[type=number]::-webkit-outer-spin-button {
             display: inline-block;
             margin-bottom: 2px;
             margin-right: 10px;
-            font-size: 1em; }
+            font-family: "Poppins", sans-serif;
+            font-size: 0.875em;
+            transition: 0.5s ease;
+            text-decoration: none; }
             .framepresencia .contenidopresencia .lugares .lista .listado a .fa {
               color: #f1b821; }
+            .framepresencia .contenidopresencia .lugares .lista .listado a:hover {
+              color: #f1b821;
+              transition: 0.5s ease; }
 
 /*== mensaje provincial */
 .frameprovincial {
@@ -1586,6 +1592,7 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: #f1b821;
         z-index: 100; }
 
+/*======== Familia Dominicana ============= */
 /*=============== cuadro de selecciona tu iglesia ==== */
 .m-iparroquial .contenidoframe {
   color: #252525;
@@ -1942,6 +1949,102 @@ input[type=number]::-webkit-outer-spin-button {
         bottom: -0.8em;
         background-color: #f1b821;
         z-index: 100; }
+
+/*======== Familia Dominicana ============= */
+.m-iparroquial .contenidoframe {
+  color: #252525;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 150px;
+  text-align: center; }
+  @media screen and (max-width: 640px) {
+    .m-iparroquial .contenidoframe {
+      padding: 20px 40px; } }
+.m-iparroquial #familia {
+  min-height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: center; }
+  .m-iparroquial #familia #items {
+    width: calc(var(--sizem)/4);
+    min-height: 150px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden; }
+    @media screen and (max-width: 640px) {
+      .m-iparroquial #familia #items {
+        width: calc(var(--sizem)/2);
+        padding: 5px; } }
+    @media screen and (max-width: 480px) {
+      .m-iparroquial #familia #items {
+        width: var(--sizem); } }
+    @media screen and (max-width: 320px) {
+      .m-iparroquial #familia #items {
+        width: var(--sizem); } }
+    .m-iparroquial #familia #items .pilares-ingreso {
+      background-color: #f1b821; }
+    .m-iparroquial #familia #items a {
+      color: red;
+      text-decoration: none;
+      padding: 0px 0px 8px 0px;
+      display: block;
+      background-color: #ffffff;
+      margin: 10px;
+      border: 1px solid #ffffff; }
+      .m-iparroquial #familia #items a:hover {
+        color: #b20013;
+        transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        -webkit-transition: 0.5s ease; }
+        .m-iparroquial #familia #items a:hover .titulo span {
+          color: #131313;
+          transition: 0.5s ease; }
+        .m-iparroquial #familia #items a:hover .thumb img {
+          transition: 0.5s ease;
+          border: 5px solid #ffffff; }
+      .m-iparroquial #familia #items a .titulo {
+        font-family: "Poppins", sans-serif;
+        color: #000000;
+        font-weight: bold;
+        font-size: 0.875em;
+        padding: 15px 20px 50px 20px;
+        text-align: center;
+        transition: 0.5s ease;
+        margin-top: 10px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        min-height: 55px;
+        display: block; }
+        .m-iparroquial #familia #items a .titulo span {
+          display: block; }
+      .m-iparroquial #familia #items a .thumb {
+        background-color: #f1b821;
+        position: relative;
+        box-sizing: border-box;
+        margin: 0px auto;
+        padding: 50px 0px 0px 0px;
+        text-align: center;
+        --width: 50%; }
+        .m-iparroquial #familia #items a .thumb:after {
+          content: "";
+          height: 2px;
+          width: calc(var(--width)/4);
+          position: absolute;
+          background-color: #ffffff;
+          bottom: -15px;
+          left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 );
+          display: block; }
+        .m-iparroquial #familia #items a .thumb img {
+          width: 100%;
+          height: 100%;
+          width: 90px;
+          height: 90px;
+          border-radius: 150%;
+          background-size: cover;
+          transition: 0.5s ease;
+          border: 5px solid #f19100; }
 
 .section-bienvenida {
   width: var(--sizem);
