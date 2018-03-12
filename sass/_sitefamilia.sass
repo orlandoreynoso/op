@@ -1,5 +1,7 @@
 /*======== Familia Dominicana =============*/
-.m-iparroquial
+.framefamilia
+	padding-top: 35px
+	padding-bottom: 35px
 	.contenidoframe
 		color: $opgriso
 		width: 100%
@@ -55,7 +57,7 @@
 					font-family: $poppins
 					color: $negro
 					font-weight: bold
-					font-size: 0.875em
+					font-size: 1em
 					padding: 15px 20px 50px 20px
 					text-align: center
 					transition: 0.5s ease
@@ -70,7 +72,7 @@
 					background-color: $opamarillo
 					position: relative
 					box-sizing: border-box
-					margin: 0px auto
+					margin: 0px auto 30px auto
 					padding: 50px 0px 0px 0px
 					text-align: center
 					--width: 50%
@@ -84,11 +86,12 @@
 						left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 )
 						display: block
 					img
-						width: 100%
-						height: 100%
-						width: 90px
-						height: 90px
+						width: 140px
+						height: 140px
 						border-radius: 150%
 						background-size: cover
 						transition: 0.5s ease
 						border: 5px solid $opborder
+	.titulo-familia
+		text-transform: uppercase
+		@include tituloafterop($negro,$opamarillo,1.500)

@@ -16,6 +16,14 @@ add_theme_support('post-thumbnails');
 
 //add_image_size( $name, $width, $height, $crop );
 
+function menus_generales(){
+  register_nav_menus(array(
+    'menu-redes'=>__('Menu Redes','godoy')
+  ));
+}
+
+add_action('init','menus_generales');
+
 
 function get_post_ancestor_id(){
 
@@ -41,25 +49,23 @@ include (TEMPLATEPATH. '/inc/estilos.php');
 //add_image_size( $name, $width, $height, $crop );
 
 the_post_thumbnail('thumbnail',1024,1024,true);       // Tamaño de la miniatura 150x150 píxeles
-
-the_post_thumbnail('medium',300,300, true);          // Tamaño de la mediano 300x300 píxeles
-
 the_post_thumbnail('medium',300,300, true);          // Tamaño de la mediano 300x300 píxeles
 the_post_thumbnail('espiritualidad',420,312);
 the_post_thumbnail('pastorales', 751, 422, true);
 the_post_thumbnail('comunidades', 1100, 404, true);
 the_post_thumbnail('full'); // La resolución original
 add_image_size('espiritualidad', 420, 312, true);
+add_image_size('fraile', 682, 433, true);
+add_image_size('presencia', 606, 476, true);
+add_image_size('plan', 260, 329, true);
+add_image_size('noticias', 418, 314, true);
+add_image_size('pilares', 300, 214, true);
+//add_image_size('pilares', 362, 333, true);
+//add_image_size('pilares', 352, 323, true);
+//add_image_size('pilares', 181, 111, true);
 //set_post_thumbnail_size(1024,1024,true );
 
-
-
-
-
- require_once(TEMPLATEPATH.'/libs/wp_bootstrap_navwalker.php');
-
-
-
+require_once(TEMPLATEPATH.'/libs/wp_bootstrap_navwalker.php');
 
 
 /* Theme setup */

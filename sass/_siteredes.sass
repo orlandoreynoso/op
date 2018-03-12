@@ -1,0 +1,50 @@
+.footer-right
+  .or-redes
+    box-sizing: border-box
+    padding: 0px 0px 0px 0px
+    margin: 0px
+    width: 100%
+    nav.sociales
+    .sociales
+      width: 100%
+      padding: 0px
+      text-align: center
+      ul.menu
+        text-align: center
+        list-style: none
+        padding: 0px 0px 0px 0px
+        .sr-text
+          display: none
+        li
+          margin-right: 10px
+          display: inline-block
+          a
+            text-decoration: none
+            transition: 0.5s ease
+            color: $opamarillo !important
+            &:hover
+              color: $opamarillo !important
+          a::before
+            font-family: 'FontAwesome'
+            content: '\f08e'
+            font-size: 1.125em
+            -webkit-font-smoothing: antialiased
+            text-decoration: none
+          a[href*="facebook.com"]
+            &::before
+              content: '\f09a'
+          a[href*="twitter.com"]
+            &::before
+              content: '\f099'
+          a[href*="youtube.com"]
+            &::before
+              content: '\f16a'
+          a[href*="instagram.com"]
+            &::before
+              content: '\f16d'
+          a[href*="vimeo.com"]
+            &::before
+              content: '\f194'
+          a[href*="linkedin.com"]
+            &::before
+              content: '\f08c'

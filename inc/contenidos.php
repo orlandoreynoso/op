@@ -23,7 +23,8 @@ function presencia($id){ ?>
      while($the_query->have_posts()) : $the_query->the_post();  ?>
     <div class="lista">
       <div class="titulo">
-        <h3><?php the_title();  ?></h3>
+        <a href="<?php the_permalink(); ?>"><?php the_title();  ?></a>
+        <!-- h3><?php // the_title();  ?></h3-->
       </div>
       <div class="listado">
         <?php lista_presencia(get_the_id()); ?>
@@ -44,7 +45,7 @@ function lista_presencia($id){ ?>
     $title = get_the_title($page );
      while($the_query->have_posts()) : $the_query->the_post();  ?>
      <a class_="item" href="<?php the_permalink(); ?>" class="cat">
-       <!-- i class="fa fa-angle-double-right"></i -->       
+       <!-- i class="fa fa-angle-double-right"></i -->
        <?php the_title( '',',') ?>
      </a>
 
@@ -111,7 +112,7 @@ if ( $the_query->have_posts() ) {
     <div class="thumb">
     <?php
     if(has_post_thumbnail()){
-      the_post_thumbnail('medium');
+      the_post_thumbnail('noticias');
     }
     else{ ?>
       <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/frailes-dominicos-op.jpg" alt="">

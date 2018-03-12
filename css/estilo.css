@@ -9,7 +9,7 @@
   background-color: #f2f2f2; }
 
 .m-blanco {
-  background-color: red; }
+  background-color: #ffffff; }
 
 .m-azul {
   background-color: #293449; }
@@ -1627,7 +1627,8 @@ input[type=number]::-webkit-outer-spin-button {
       .m-iparroquial #iglesia #div1 {
         width: var(--sizem); } }
     .m-iparroquial #iglesia #div1 .pilares-ingreso {
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      text-align: center; }
     .m-iparroquial #iglesia #div1 a {
       color: #293449;
       text-decoration: none;
@@ -1665,7 +1666,11 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: #293449;
         position: relative;
         box-sizing: border-box;
-        --width: 100%; }
+        text-align: center;
+        width: 300px;
+        height: 214px;
+        margin: 0px auto;
+        overflow: hidden; }
         .m-iparroquial #iglesia #div1 a .thumb:after {
           content: "";
           height: 2px;
@@ -1677,7 +1682,7 @@ input[type=number]::-webkit-outer-spin-button {
           display: block; }
         .m-iparroquial #iglesia #div1 a .thumb img {
           width: 100%;
-          height: 100%;
+          height: auto;
           background-size: cover;
           transition: 0.5s ease; }
           .m-iparroquial #iglesia #div1 a .thumb img:hover {
@@ -1712,7 +1717,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-family: "Roboto", sans-serif;
         color: #252525;
         font-size: 1em;
-        padding: 0px 10px;
+        padding: 0px 30px;
         transition: 0.5s ease;
         text-align: center;
         text-transform: inherit; }
@@ -1951,100 +1956,366 @@ input[type=number]::-webkit-outer-spin-button {
         z-index: 100; }
 
 /*======== Familia Dominicana ============= */
-.m-iparroquial .contenidoframe {
-  color: #252525;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20px 150px;
-  text-align: center; }
-  @media screen and (max-width: 640px) {
-    .m-iparroquial .contenidoframe {
-      padding: 20px 40px; } }
-.m-iparroquial #familia {
-  min-height: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  justify-content: center; }
-  .m-iparroquial #familia #items {
-    width: calc(var(--sizem)/4);
-    min-height: 150px;
-    padding: 10px 10px 10px 10px;
+.framefamilia {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  .framefamilia .contenidoframe {
+    color: #252525;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 150px;
+    text-align: center; }
+    @media screen and (max-width: 640px) {
+      .framefamilia .contenidoframe {
+        padding: 20px 40px; } }
+  .framefamilia #familia {
+    min-height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: center; }
+    .framefamilia #familia #items {
+      width: calc(var(--sizem)/4);
+      min-height: 150px;
+      padding: 10px 10px 10px 10px;
+      text-align: center;
+      box-sizing: border-box;
+      overflow: hidden; }
+      @media screen and (max-width: 640px) {
+        .framefamilia #familia #items {
+          width: calc(var(--sizem)/2);
+          padding: 5px; } }
+      @media screen and (max-width: 480px) {
+        .framefamilia #familia #items {
+          width: var(--sizem); } }
+      @media screen and (max-width: 320px) {
+        .framefamilia #familia #items {
+          width: var(--sizem); } }
+      .framefamilia #familia #items .pilares-ingreso {
+        background-color: #f1b821; }
+      .framefamilia #familia #items a {
+        color: red;
+        text-decoration: none;
+        padding: 0px 0px 8px 0px;
+        display: block;
+        background-color: #ffffff;
+        margin: 10px;
+        border: 1px solid #ffffff; }
+        .framefamilia #familia #items a:hover {
+          color: #b20013;
+          transition: 0.5s ease;
+          -o-transition: 0.5s ease;
+          -webkit-transition: 0.5s ease; }
+          .framefamilia #familia #items a:hover .titulo span {
+            color: #131313;
+            transition: 0.5s ease; }
+          .framefamilia #familia #items a:hover .thumb img {
+            transition: 0.5s ease;
+            border: 5px solid #ffffff; }
+        .framefamilia #familia #items a .titulo {
+          font-family: "Poppins", sans-serif;
+          color: #000000;
+          font-weight: bold;
+          font-size: 1em;
+          padding: 15px 20px 50px 20px;
+          text-align: center;
+          transition: 0.5s ease;
+          margin-top: 10px;
+          text-transform: uppercase;
+          box-sizing: border-box;
+          min-height: 55px;
+          display: block; }
+          .framefamilia #familia #items a .titulo span {
+            display: block; }
+        .framefamilia #familia #items a .thumb {
+          background-color: #f1b821;
+          position: relative;
+          box-sizing: border-box;
+          margin: 0px auto 30px auto;
+          padding: 50px 0px 0px 0px;
+          text-align: center;
+          --width: 50%; }
+          .framefamilia #familia #items a .thumb:after {
+            content: "";
+            height: 2px;
+            width: calc(var(--width)/4);
+            position: absolute;
+            background-color: #ffffff;
+            bottom: -15px;
+            left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 );
+            display: block; }
+          .framefamilia #familia #items a .thumb img {
+            width: 140px;
+            height: 140px;
+            border-radius: 150%;
+            background-size: cover;
+            transition: 0.5s ease;
+            border: 5px solid #f19100; }
+  .framefamilia .titulo-familia {
+    text-transform: uppercase;
+    padding: 10px;
+    width: var(--sizem);
     text-align: center;
     box-sizing: border-box;
-    overflow: hidden; }
-    @media screen and (max-width: 640px) {
-      .m-iparroquial #familia #items {
-        width: calc(var(--sizem)/2);
-        padding: 5px; } }
-    @media screen and (max-width: 480px) {
-      .m-iparroquial #familia #items {
-        width: var(--sizem); } }
-    @media screen and (max-width: 320px) {
-      .m-iparroquial #familia #items {
-        width: var(--sizem); } }
-    .m-iparroquial #familia #items .pilares-ingreso {
-      background-color: #f1b821; }
-    .m-iparroquial #familia #items a {
-      color: red;
-      text-decoration: none;
-      padding: 0px 0px 8px 0px;
-      display: block;
-      background-color: #ffffff;
-      margin: 10px;
-      border: 1px solid #ffffff; }
-      .m-iparroquial #familia #items a:hover {
-        color: #b20013;
-        transition: 0.5s ease;
-        -o-transition: 0.5s ease;
-        -webkit-transition: 0.5s ease; }
-        .m-iparroquial #familia #items a:hover .titulo span {
-          color: #131313;
-          transition: 0.5s ease; }
-        .m-iparroquial #familia #items a:hover .thumb img {
-          transition: 0.5s ease;
-          border: 5px solid #ffffff; }
-      .m-iparroquial #familia #items a .titulo {
-        font-family: "Poppins", sans-serif;
-        color: #000000;
-        font-weight: bold;
-        font-size: 0.875em;
-        padding: 15px 20px 50px 20px;
-        text-align: center;
-        transition: 0.5s ease;
-        margin-top: 10px;
-        text-transform: uppercase;
-        box-sizing: border-box;
-        min-height: 55px;
-        display: block; }
-        .m-iparroquial #familia #items a .titulo span {
-          display: block; }
-      .m-iparroquial #familia #items a .thumb {
+    margin-bottom: 30px; }
+    .framefamilia .titulo-familia h3 {
+      position: relative;
+      margin: auto;
+      --width: 20%;
+      color: #000000;
+      font-weight: bold;
+      z-index: 9;
+      font-size: 1.5em; }
+      .framefamilia .titulo-familia h3::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: calc(var(--width)/2);
+        position: absolute;
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        bottom: -0.8em;
         background-color: #f1b821;
-        position: relative;
+        z-index: 100; }
+
+/*======== Familia Dominicana ============= */
+.framefraile {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f3f3f3; }
+  .framefraile .contenidoframe {
+    color: #252525;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 150px;
+    text-align: center; }
+    @media screen and (max-width: 640px) {
+      .framefraile .contenidoframe {
+        padding: 20px 40px; } }
+  .framefraile #fraile {
+    min-height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: center; }
+    .framefraile #fraile .contenido {
+      padding-top: 60px;
+      box-sizing: border-box; }
+      .framefraile #fraile .contenido .titulo-fraile {
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        padding: 10px;
+        width: var(--sizem);
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 30px; }
+        .framefraile #fraile .contenido .titulo-fraile h3 {
+          position: relative;
+          margin: auto;
+          --width: 20%;
+          color: #000000;
+          font-weight: bold;
+          z-index: 9;
+          font-size: 1.125em; }
+          .framefraile #fraile .contenido .titulo-fraile h3::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: calc(var(--width)/2);
+            position: absolute;
+            left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+            bottom: -0.8em;
+            background-color: #f1b821;
+            z-index: 100; }
+      .framefraile #fraile .contenido .textofraile {
+        margin-top: 35px;
+        box-sizing: border-box;
+        text-align: center; }
+        .framefraile #fraile .contenido .textofraile .mensaje {
+          color: #777777; }
+        .framefraile #fraile .contenido .textofraile .firma {
+          margin-top: 5px;
+          color: #333333;
+          font-size: 1em; }
+        .framefraile #fraile .contenido .textofraile .ingresar {
+          display: block;
+          color: #f1b821;
+          transition: 0.5s ease;
+          text-decoration: none;
+          margin-top: 18px; }
+          .framefraile #fraile .contenido .textofraile .ingresar:hover {
+            transition: 0.5s ease;
+            color: #333333; }
+    .framefraile #fraile .portada .imgpresencia {
+      background-color: #293449;
+      position: relative;
+      display: block;
+      margin: 0px;
+      padding: 0px; }
+      .framefraile #fraile .portada .imgpresencia .pregunta {
+        position: absolute;
+        background-color: rgba(41, 52, 73, 0.5);
+        right: 0;
+        left: 0;
+        bottom: -8px;
+        height: 68px;
+        vertical-align: middle;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        padding: 10px 10px 10px 42px;
+        color: #ffffff; }
+      .framefraile #fraile .portada .imgpresencia .thumb {
+        background-color: #f1b821;
         box-sizing: border-box;
         margin: 0px auto;
-        padding: 50px 0px 0px 0px;
         text-align: center;
-        --width: 50%; }
-        .m-iparroquial #familia #items a .thumb:after {
-          content: "";
-          height: 2px;
-          width: calc(var(--width)/4);
-          position: absolute;
-          background-color: #ffffff;
-          bottom: -15px;
-          left: calc( calc( 100% - ( calc(var(--width)/4)) ) / 2 );
-          display: block; }
-        .m-iparroquial #familia #items a .thumb img {
-          width: 100%;
-          height: 100%;
-          width: 90px;
-          height: 90px;
-          border-radius: 150%;
-          background-size: cover;
+        width: 100%;
+        height: auto; }
+        .framefraile #fraile .portada .imgpresencia .thumb:hover {
           transition: 0.5s ease;
-          border: 5px solid #f19100; }
+          opacity: 0.7; }
+        .framefraile #fraile .portada .imgpresencia .thumb img {
+          width: 100%;
+          height: 100%; }
+  .framefraile .titulo-fraile {
+    text-transform: uppercase;
+    padding: 10px;
+    width: var(--sizem);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 30px; }
+    .framefraile .titulo-fraile h3 {
+      position: relative;
+      margin: auto;
+      --width: 20%;
+      color: #000000;
+      font-weight: bold;
+      z-index: 9;
+      font-size: 1.5em; }
+      .framefraile .titulo-fraile h3::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: calc(var(--width)/2);
+        position: absolute;
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        bottom: -0.8em;
+        background-color: #f1b821;
+        z-index: 100; }
+
+/*======== Familia Dominicana ============= */
+.framedonacion {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #252525; }
+  .framedonacion .contenidoframe {
+    color: #252525;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 150px;
+    text-align: center; }
+    @media screen and (max-width: 640px) {
+      .framedonacion .contenidoframe {
+        padding: 20px 40px; } }
+  .framedonacion #fraile {
+    min-height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center; }
+    .framedonacion #fraile .contenido {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .framedonacion #fraile .contenido .ingresar {
+        display: block;
+        color: #252525;
+        transition: 0.5s ease;
+        text-decoration: none;
+        background-color: #f1b821;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.375em;
+        padding: 12px 54px 12px 54px; }
+        .framedonacion #fraile .contenido .ingresar:hover {
+          transition: 0.5s ease;
+          color: #333333;
+          background-color: #ffffff; }
+    .framedonacion #fraile .portada {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      .framedonacion #fraile .portada h3 {
+        padding: 0px;
+        margin: 0px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.375em; }
+        .framedonacion #fraile .portada h3 .icono {
+          color: #f1b821;
+          float: left; }
+        .framedonacion #fraile .portada h3 .desc {
+          color: #ffffff;
+          margin-left: 20px;
+          text-transform: uppercase; }
+      .framedonacion #fraile .portada .imgpresencia {
+        background-color: #293449;
+        position: relative;
+        display: block;
+        margin: 0px;
+        padding: 0px; }
+        .framedonacion #fraile .portada .imgpresencia .pregunta {
+          position: absolute;
+          background-color: rgba(41, 52, 73, 0.5);
+          right: 0;
+          left: 0;
+          bottom: -8px;
+          height: 68px;
+          vertical-align: middle;
+          line-height: 1.5em;
+          box-sizing: border-box;
+          padding: 10px 10px 10px 42px;
+          color: #ffffff; }
+        .framedonacion #fraile .portada .imgpresencia .thumb {
+          background-color: #f1b821;
+          box-sizing: border-box;
+          margin: 0px auto;
+          text-align: center;
+          width: 100%;
+          height: auto; }
+          .framedonacion #fraile .portada .imgpresencia .thumb:hover {
+            transition: 0.5s ease;
+            opacity: 0.7; }
+          .framedonacion #fraile .portada .imgpresencia .thumb img {
+            width: 100%;
+            height: 100%; }
+  .framedonacion .titulo-fraile {
+    text-transform: uppercase;
+    padding: 10px;
+    width: var(--sizem);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 30px; }
+    .framedonacion .titulo-fraile h3 {
+      position: relative;
+      margin: auto;
+      --width: 20%;
+      color: #000000;
+      font-weight: bold;
+      z-index: 9;
+      font-size: 1.5em; }
+      .framedonacion .titulo-fraile h3::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: calc(var(--width)/2);
+        position: absolute;
+        left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+        bottom: -0.8em;
+        background-color: #f1b821;
+        z-index: 100; }
 
 .section-bienvenida {
   width: var(--sizem);
@@ -2924,6 +3195,49 @@ input[type=number]::-webkit-outer-spin-button {
       color: #46b271;
       transition: 0.5s ease; }
 
+.footer-right .or-redes {
+  box-sizing: border-box;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  width: 100%; }
+  .footer-right .or-redes .sociales {
+    width: 100%;
+    padding: 0px;
+    text-align: center; }
+    .footer-right .or-redes .sociales ul.menu {
+      text-align: center;
+      list-style: none;
+      padding: 0px 0px 0px 0px; }
+      .footer-right .or-redes .sociales ul.menu .sr-text {
+        display: none; }
+      .footer-right .or-redes .sociales ul.menu li {
+        margin-right: 10px;
+        display: inline-block; }
+        .footer-right .or-redes .sociales ul.menu li a {
+          text-decoration: none;
+          transition: 0.5s ease;
+          color: #f1b821 !important; }
+          .footer-right .or-redes .sociales ul.menu li a:hover {
+            color: #f1b821 !important; }
+        .footer-right .or-redes .sociales ul.menu li a::before {
+          font-family: "FontAwesome";
+          content: "";
+          font-size: 1.125em;
+          -webkit-font-smoothing: antialiased;
+          text-decoration: none; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="facebook.com"]::before {
+          content: ""; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="twitter.com"]::before {
+          content: ""; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="youtube.com"]::before {
+          content: ""; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="instagram.com"]::before {
+          content: ""; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="vimeo.com"]::before {
+          content: ""; }
+        .footer-right .or-redes .sociales ul.menu li a[href*="linkedin.com"]::before {
+          content: ""; }
+
 #totop {
   display: none;
   text-decoration: none;
@@ -2946,23 +3260,58 @@ input[type=number]::-webkit-outer-spin-button {
 
 footer {
   width: 100%;
-  background-color: #b20013; }
-  footer #pie {
-    background-color: #b20013;
-    min-height: 150px; }
-    footer #pie .group {
-      padding: 50px;
+  background-color: #333333; }
+  footer .pie {
+    background-color: #333333;
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    footer .pie .footer-left {
+      width: 49%; }
+      @media screen and (max-width: 640px) {
+        footer .pie .footer-left {
+          width: 100%;
+          text-align: center; } }
+      footer .pie .footer-left p {
+        font-family: "Roboto", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        color: #ffffff;
+        font-size: 0.9em; }
+      footer .pie .footer-left a {
+        color: #f1b821;
+        text-decoration: none; }
+        footer .pie .footer-left a:hover {
+          color: #f1b821;
+          transition: 0.5s ease; }
+    footer .pie .search {
+      width: 100%;
+      padding-top: 20px; }
+    footer .pie .footer-right {
+      width: 49%;
+      color: #ffffff;
+      float: right; }
+      @media screen and (max-width: 640px) {
+        footer .pie .footer-right {
+          width: 100%;
+          text-align: center;
+          margin-top: 12px; } }
+    footer .pie .group {
+      width: 100%;
       text-align: center;
       color: #ffffff;
       line-height: 1.5em;
       font-family: "Economica-Bold";
       text-shadow: 1px 2px 1px #000;
-      font-size: 1.2em; }
-      footer #pie .group a {
-        color: #f7b32b;
-        text-decoration: none; }
-        footer #pie .group a:hover {
-          color: #009FFF;
-          transition: 0.5s ease; }
+      font-size: 1.2em;
+      background-color: red; }
+
+/*================================= */
 
 /*# sourceMappingURL=estilo.css.map */

@@ -1,4 +1,4 @@
-<div class="titulo-anuncios">
+<div class="titulo-familia">
 	<h3>familia dominicana</h3>
 </div>
 <article class="c-info" id="familia">

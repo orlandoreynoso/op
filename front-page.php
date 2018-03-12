@@ -50,18 +50,22 @@ Template Name: coverPage mscgt
 <section class="framepresencia">
   <?php get_template_part( 'template/cover','presencia') ?>
 </section>
-<section class="m-iparroquial m-gris">
+<section class="framefamilia m-blanco">
   <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
   <?php get_template_part( 'template/cover','familia') ?>
 </section>
-
-<section class="msc10-espiritualidad">
-  <?php get_template_part( 'template/cover', 'espiritualidad'); ?>
+<section class="framefraile">
+  <?php //get_template_part( 'template/cover', 'infoparroquial') ?>
+  <?php get_template_part( 'template/cover','fraile') ?>
 </section>
 
-<section class="m-contenido-secciones">
-  <?php get_template_part( 'template/cover', 'contenido') ?>
+<section class="framedonacion">
+  <?php get_template_part( 'template/cover', 'donacion'); ?>
 </section>
+
+<!-- section class="m-contenido-secciones">
+  <?php // get_template_part( 'template/cover', 'contenido') ?>
+</section -->
 
 <!-- section class="m-entradas-recientes">
   <?php // get_template_part( 'template/cover','recomendaciones' ); ?>
@@ -71,9 +75,9 @@ Template Name: coverPage mscgt
   <?php // get_template_part( 'template/cover','entradasrecientes' ); ?>
 </section -->
 
-<section class="msc-agrupaciones">
-  <?php get_template_part( 'template/cover', 'agrupaciones') ?>
-</section>
+<!-- section class="msc-agrupaciones">
+  <?php // get_template_part( 'template/cover', 'agrupaciones') ?>
+</section -->
 
 
 <?php get_footer(); ?>

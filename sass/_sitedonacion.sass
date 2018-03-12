@@ -1,0 +1,91 @@
+/*======== Familia Dominicana =============*/
+.framedonacion
+	padding-top: 30px
+	padding-bottom: 30px
+	background-color: $opgriso
+	.contenidoframe
+		color: $opgriso
+		width: 100%
+		box-sizing: border-box
+		padding: 20px 150px
+		text-align: center
+		@media screen and (max-width: 640px)
+			padding: 20px 40px
+	#fraile
+		min-height: 50px
+		display: flex
+		flex-flow: row wrap
+		box-sizing: border-box
+		justify-content: center
+		align-items: center
+		.contenido
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			.ingresar
+				display: block
+				color: $opgriso
+				transition: 0.5s ease
+				text-decoration: none
+				background-color: $opamarillo
+				font-family: $poppins
+				font-size: 1.375em
+				padding: 12px 54px 12px 54px
+				&:hover
+					transition: 0.5s ease
+					color: $opgrisoscuro
+					background-color: $blanco
+		.portada
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			h3
+				padding: 0px
+				margin: 0px
+				font-family: $poppins
+				font-size: 1.375em
+				.icono
+					color: $opamarillo
+					float: left
+				.desc
+					color: $blanco
+					margin-left: 20px
+					text-transform: uppercase
+			.imgpresencia
+				background-color: $opazul
+				position: relative
+				display: block
+				margin: 0px
+				padding: 0px
+				.pregunta
+					position: absolute
+					background-color: rgba($opazul,0.5)
+					right: 0
+					left: 0
+					bottom: -8px
+					height: 68px
+					vertical-align: middle
+					line-height: 1.500em
+					box-sizing: border-box
+					padding: 10px 10px 10px 42px
+					color: $blanco
+				.thumb
+					background-color: $opamarillo
+					box-sizing: border-box
+					margin: 0px auto
+					text-align: center
+					width: 100%
+					height: auto
+					&:hover
+						transition: 0.5s ease
+						opacity: 0.7
+					img
+						width: 100%
+						height: 100%
+	.titulo-fraile
+		text-transform: uppercase
+		@include tituloafterop($negro,$opamarillo,1.500)
