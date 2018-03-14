@@ -6,17 +6,17 @@
   flex-wrap: wrap
   align-items: center
   justify-content: center
+  align-items: center
   width: 100%
   .cuadro
     position: relative
-    padding: 0px
-    width: --sizem
+    padding: 60px 0px 0px 0px
+    width: var(--sizem)
     margin: 0px auto
     text-align: center
-    background-color: green
     &:after
       content: ''
-      height: 10px
+      height: 1px
       position: absolute
       background-color: $opsuscripcion
       color: $blanco
@@ -25,9 +25,92 @@
       display: block
       width: calc(var(--sizem)/1)
       left: calc( calc( 100% - ( calc(var(--sizem)/1)) ) / 2 )
-    .widget
+    .texto
+      color: $blanco
+      font-size: 1em
+      font-family: $poppins
+    .widget_wysija_cont
       width: 100%
       list-style: none
+      margin: 0px auto
+      text-align: center
+      form
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        padding: 20px
+        text-align: center
+        margin: 0px auto
+        p.wysija-paragraph
+          padding: 20px 20px 35px 20px
+          box-sizing: border-box
+          position: relative
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: flex-end
+          align-items: center
+          @media screen and ( max-width: 640px )
+            width: 100%
+            justify-content: center
+          .formError
+            width: 50%
+            height: auto
+            left: 154px !important
+            bottom: 0px !important
+            top: 60px !important
+            right: 0px !important
+            float: right !important
+            padding: 5px
+            position: absolute
+            text-align: center
+            @media screen and ( max-width: 991px )
+              top: 93px !important
+              left: 150px !important
+            @media screen and ( max-width: 768px )
+              left: 60px !important
+            @media screen and ( max-width: 640px )
+              left: 33% !important
+              width: 50%
+            @media screen and ( max-width: 361px )
+              left: 13% !important
+            @media screen and ( max-width: 318px )
+              top: 118px !important
+              left: 8% !important
+            .formErrorContent
+          label
+            color: $blanco
+            margin-right: 10px
+            @media screen and ( max-width: 640px )
+              width: 100%
+          input[type="text"]
+            background-color: $blanco
+            padding: 5px
+            @media screen and ( max-width: 640px )
+              width: 100%
+          .wysija-input
+            height: 41px
+            display: block
+            border: 1px solid $opamarillo
+        .wysija-submit.wysija-submit-field
+          background-color: $opamarillo
+          color: $blanco
+          padding: 15px 30px 15px 30px
+          margin: 3px 0px 0px 10px
+          line-height: 0.5em
+          font-size: 1em
+          height: 41px
+          font-size: 1em
+          font-family: $poppins
+          transition: 0.5s ease
+          @media screen and ( min-width: 1000px )
+            margin: -27px 0px 0px 10px
+          &:hover
+            transition: 0.5s ease
+            color: $opgriso2
+            background-color: $blanco
 #totop
   display: none
   text-decoration: none

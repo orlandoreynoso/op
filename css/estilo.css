@@ -1737,7 +1737,8 @@ input[type=number]::-webkit-outer-spin-button {
 .framevidamision {
   box-sizing: border-box;
   padding: 30px;
-  width: 100%; }
+  width: 100%;
+  background-color: #ffffff; }
   .framevidamision .contenidoframe {
     color: #252525;
     width: 100%;
@@ -3250,17 +3251,17 @@ input[type=number]::-webkit-outer-spin-button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%; }
   .framesuscripcion .cuadro {
     position: relative;
-    padding: 0px;
-    width: --sizem;
+    padding: 60px 0px 0px 0px;
+    width: var(--sizem);
     margin: 0px auto;
-    text-align: center;
-    background-color: green; }
+    text-align: center; }
     .framesuscripcion .cuadro:after {
       content: "";
-      height: 10px;
+      height: 1px;
       position: absolute;
       background-color: #2b2b2c;
       color: #ffffff;
@@ -3269,9 +3270,100 @@ input[type=number]::-webkit-outer-spin-button {
       display: block;
       width: calc(var(--sizem)/1);
       left: calc( calc( 100% - ( calc(var(--sizem)/1)) ) / 2 ); }
-    .framesuscripcion .cuadro .widget {
+    .framesuscripcion .cuadro .texto {
+      color: #ffffff;
+      font-size: 1em;
+      font-family: "Poppins", sans-serif; }
+    .framesuscripcion .cuadro .widget_wysija_cont {
       width: 100%;
-      list-style: none; }
+      list-style: none;
+      margin: 0px auto;
+      text-align: center; }
+      .framesuscripcion .cuadro .widget_wysija_cont form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        margin: 0px auto; }
+        .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph {
+          padding: 20px 20px 35px 20px;
+          box-sizing: border-box;
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          align-items: center; }
+          @media screen and (max-width: 640px) {
+            .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph {
+              width: 100%;
+              justify-content: center; } }
+          .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .formError {
+            width: 50%;
+            height: auto;
+            left: 154px !important;
+            bottom: 0px !important;
+            top: 60px !important;
+            right: 0px !important;
+            float: right !important;
+            padding: 5px;
+            position: absolute;
+            text-align: center; }
+            @media screen and (max-width: 991px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .formError {
+                top: 93px !important;
+                left: 150px !important; } }
+            @media screen and (max-width: 768px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .formError {
+                left: 60px !important; } }
+            @media screen and (max-width: 640px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .formError {
+                left: 33% !important;
+                width: 50%; } }
+            @media screen and (max-width: 361px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .formError {
+                left: 13% !important; } }
+            @media screen and (max-width: 318px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .formError {
+                top: 118px !important;
+                left: 8% !important; } }
+          .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph label {
+            color: #ffffff;
+            margin-right: 10px; }
+            @media screen and (max-width: 640px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph label {
+                width: 100%; } }
+          .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph input[type="text"] {
+            background-color: #ffffff;
+            padding: 5px; }
+            @media screen and (max-width: 640px) {
+              .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph input[type="text"] {
+                width: 100%; } }
+          .framesuscripcion .cuadro .widget_wysija_cont form p.wysija-paragraph .wysija-input {
+            height: 41px;
+            display: block;
+            border: 1px solid #f1b821; }
+        .framesuscripcion .cuadro .widget_wysija_cont form .wysija-submit.wysija-submit-field {
+          background-color: #f1b821;
+          color: #ffffff;
+          padding: 15px 30px 15px 30px;
+          margin: 3px 0px 0px 10px;
+          line-height: 0.5em;
+          font-size: 1em;
+          height: 41px;
+          font-size: 1em;
+          font-family: "Poppins", sans-serif;
+          transition: 0.5s ease; }
+          @media screen and (min-width: 1000px) {
+            .framesuscripcion .cuadro .widget_wysija_cont form .wysija-submit.wysija-submit-field {
+              margin: -27px 0px 0px 10px; } }
+          .framesuscripcion .cuadro .widget_wysija_cont form .wysija-submit.wysija-submit-field:hover {
+            transition: 0.5s ease;
+            color: #131313;
+            background-color: #ffffff; }
 
 #totop {
   display: none;

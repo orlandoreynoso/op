@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<div class="cuadro">
-				<P>Noticias de la Provincia de San Vicente Ferrer</P>
+				<P class="texto">Noticias de la Provincia de San Vicente Ferrer</P>
 				<?php
 				$widgetNL = new WYSIJA_NL_Widget(true);
 				echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
