@@ -63,6 +63,9 @@ Template Name: coverPage mscgt
   <?php get_template_part( 'template/cover', 'donacion'); ?>
 </section>
 
+<section class="framesuscripcion">
+  <?php get_template_part( 'template/cover', 'suscripcion'); ?>
+</section>
 <!-- section class="m-contenido-secciones">
   <?php // get_template_part( 'template/cover', 'contenido') ?>
 </section -->

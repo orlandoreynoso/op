@@ -819,7 +819,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background-color: #ffffff;
+  background-color: #131313;
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
@@ -2486,6 +2486,10 @@ input[type=number]::-webkit-outer-spin-button {
             transition: 0.5s ease;
             opacity: 0.5; }
 
+.con-general .con .interiores {
+  background-color: red;
+  padding: 20px;
+  min-height: 639px; }
 .con-general .con .interiores,
 .con-general .con .interiores-comunidad,
 .con-general .con .interior-horarios-misa {
@@ -3238,6 +3242,37 @@ input[type=number]::-webkit-outer-spin-button {
         .footer-right .or-redes .sociales ul.menu li a[href*="linkedin.com"]::before {
           content: ""; }
 
+.framesuscripcion {
+  background-color: #131313;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .framesuscripcion .cuadro {
+    position: relative;
+    padding: 0px;
+    width: --sizem;
+    margin: 0px auto;
+    text-align: center;
+    background-color: green; }
+    .framesuscripcion .cuadro:after {
+      content: "";
+      height: 10px;
+      position: absolute;
+      background-color: #2b2b2c;
+      color: #ffffff;
+      bottom: 0px;
+      right: 0;
+      display: block;
+      width: calc(var(--sizem)/1);
+      left: calc( calc( 100% - ( calc(var(--sizem)/1)) ) / 2 ); }
+    .framesuscripcion .cuadro .widget {
+      width: 100%;
+      list-style: none; }
+
 #totop {
   display: none;
   text-decoration: none;
@@ -3260,9 +3295,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 footer {
   width: 100%;
-  background-color: #333333; }
+  background-color: #131313; }
   footer .pie {
-    background-color: #333333;
+    background-color: #131313;
     min-height: 150px;
     display: flex;
     flex-direction: row;
@@ -3270,8 +3305,8 @@ footer {
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-top: 50px;
+    padding-bottom: 50px; }
     footer .pie .footer-left {
       width: 49%; }
       @media screen and (max-width: 640px) {

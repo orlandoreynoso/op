@@ -1,3 +1,33 @@
+.framesuscripcion
+  background-color: $opgriso2
+  padding: 20px
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  width: 100%
+  .cuadro
+    position: relative
+    padding: 0px
+    width: --sizem
+    margin: 0px auto
+    text-align: center
+    background-color: green
+    &:after
+      content: ''
+      height: 10px
+      position: absolute
+      background-color: $opsuscripcion
+      color: $blanco
+      bottom: 0px
+      right: 0
+      display: block
+      width: calc(var(--sizem)/1)
+      left: calc( calc( 100% - ( calc(var(--sizem)/1)) ) / 2 )
+    .widget
+      width: 100%
+      list-style: none
 #totop
   display: none
   text-decoration: none
@@ -19,9 +49,9 @@
     background-position: right 0
 footer
   width: 100%
-  background-color: $opgrisoscuro
+  background-color: $opgriso2
   .pie
-    background-color: $opgrisoscuro
+    background-color: $opgriso2
     min-height: 150px
     display: flex
     flex-direction: row
@@ -29,8 +59,8 @@ footer
     justify-content: space-between
     width: 100%
     box-sizing: border-box
-    padding-top: 30px
-    padding-bottom: 30px
+    padding-top: 50px
+    padding-bottom: 50px
     .footer-left
       width: 49%
       @media screen and ( max-width: 640px )
