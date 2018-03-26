@@ -84,14 +84,71 @@
 	display: flex
 	flex-flow: row wrap
 	box-sizing: border-box
-	justify-content: center
-	align-items: center
+	justify-content: space-between
 	@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
 		padding: 30px 50px
-	.img-provincial
-		width: 100%
-		text-align: center
+	.catequesis
+		width: 49%
 		margin: 0px auto
+		padding: 0px 10px
+		@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+			width: 100%
+		.titulo-catequesis
+			@include tituloafterop($blanco,$opamarillo,1.500)
+		.contenido
+			padding-left: 10px
+			text-align: center
+			padding-top: 10px
+			.ingreso
+				clear: both
+				margin-top: 20px
+				padding-top: 20px
+				.texto
+					width: 100%
+					display: block
+					clear: both
+				.recursos-link
+					width: 50%
+					text-align: center
+					background-color: $opamarillo
+					padding: 15px 80px 15px 80px
+					margin: 0px auto
+					box-sizing: border-box
+					border-radius: 5px
+					text-align: center
+					text-transform: uppercase
+					color: #000000
+					font-size: 1em
+					transition: 0.5s ease
+					cursor: pointer
+					text-decoration: none
+					display: block
+					order: 2
+					&:hover
+						transition: 0.5s ease
+						background-color: $blanco
+			.lista
+				color: $opamarillo
+				text-align: left
+				margin-left: 23px
+				width: 100%
+				margin-bottom: 20px
+				.listado
+					li
+						float: left
+						list-style: none
+						padding-bottom: 10px
+						width: auto
+						padding-right: 10px
+						padding-left: 10px
+			p
+				color: $blanco
+	.img-provincial
+		width: 49%
+		margin: 0px auto
+		text-align: center
+		@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+			width: 100%
 		.p-logo
 			width: 90px
 			height: 90px

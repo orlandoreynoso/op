@@ -1,9 +1,9 @@
 <div class="op">
     <?php $logoop = IMAGES.'/orden-de-predicadores.png'; ?>
-    <a class="logo" href="https://www.dominicos.org/"><img src="<?php echo $logoop; ?>" alt="Orden de Predicadores"></a>
+    <a class="logo" href="http://www.op.org/es"><img src="<?php echo $logoop; ?>" alt="Orden de Predicadores"></a>
   <div class="ingreso">
     <p class="texto">Orden de Predicadores</p>
-    <a class="btn-ingresar"href="https://www.dominicos.org/">
+    <a class="btn-ingresar"href="http://www.op.org/es">
       <span>ingresar</span>
     </a>
   </div>

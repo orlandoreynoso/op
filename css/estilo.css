@@ -1224,15 +1224,95 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-between; }
   @media screen and (max-width: 640px) {
     .frameprovincial {
       padding: 30px 50px; } }
+  .frameprovincial .catequesis {
+    width: 49%;
+    margin: 0px auto;
+    padding: 0px 10px; }
+    @media screen and (max-width: 640px) {
+      .frameprovincial .catequesis {
+        width: 100%; } }
+    .frameprovincial .catequesis .titulo-catequesis {
+      padding: 10px;
+      width: var(--sizem);
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 30px; }
+      .frameprovincial .catequesis .titulo-catequesis h3 {
+        position: relative;
+        margin: auto;
+        --width: 20%;
+        color: #ffffff;
+        font-weight: bold;
+        z-index: 9;
+        font-size: 1.5em; }
+        .frameprovincial .catequesis .titulo-catequesis h3::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: calc(var(--width)/2);
+          position: absolute;
+          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+          bottom: -0.8em;
+          background-color: #f1b821;
+          z-index: 100; }
+    .frameprovincial .catequesis .contenido {
+      padding-left: 10px;
+      text-align: center;
+      padding-top: 10px; }
+      .frameprovincial .catequesis .contenido .ingreso {
+        clear: both;
+        margin-top: 20px;
+        padding-top: 20px; }
+        .frameprovincial .catequesis .contenido .ingreso .texto {
+          width: 100%;
+          display: block;
+          clear: both; }
+        .frameprovincial .catequesis .contenido .ingreso .recursos-link {
+          width: 50%;
+          text-align: center;
+          background-color: #f1b821;
+          padding: 15px 80px 15px 80px;
+          margin: 0px auto;
+          box-sizing: border-box;
+          border-radius: 5px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #000000;
+          font-size: 1em;
+          transition: 0.5s ease;
+          cursor: pointer;
+          text-decoration: none;
+          display: block;
+          order: 2; }
+          .frameprovincial .catequesis .contenido .ingreso .recursos-link:hover {
+            transition: 0.5s ease;
+            background-color: #ffffff; }
+      .frameprovincial .catequesis .contenido .lista {
+        color: #f1b821;
+        text-align: left;
+        margin-left: 23px;
+        width: 100%;
+        margin-bottom: 20px; }
+        .frameprovincial .catequesis .contenido .lista .listado li {
+          float: left;
+          list-style: none;
+          padding-bottom: 10px;
+          width: auto;
+          padding-right: 10px;
+          padding-left: 10px; }
+      .frameprovincial .catequesis .contenido p {
+        color: #ffffff; }
   .frameprovincial .img-provincial {
-    width: 100%;
-    text-align: center;
-    margin: 0px auto; }
+    width: 49%;
+    margin: 0px auto;
+    text-align: center; }
+    @media screen and (max-width: 640px) {
+      .frameprovincial .img-provincial {
+        width: 100%; } }
     .frameprovincial .img-provincial .p-logo {
       width: 90px;
       height: 90px;
