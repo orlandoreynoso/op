@@ -321,7 +321,7 @@
     .contenedor-lm-msc .or-menum .navbar-me ul.menu li a {
       color: #ffffff;
       font-family: "Open Sans", sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       text-transform: uppercase;
       font-size: 0.875em; }
       .contenedor-lm-msc .or-menum .navbar-me ul.menu li a:hover {
@@ -1216,137 +1216,6 @@ input[type=number]::-webkit-outer-spin-button {
               color: #f1b821;
               transition: 0.5s ease; }
 
-/*== mensaje provincial */
-.frameprovincial {
-  background-color: #000000;
-  padding: 30px 150px;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  justify-content: space-between; }
-  @media screen and (max-width: 640px) {
-    .frameprovincial {
-      padding: 30px 50px; } }
-  .frameprovincial .catequesis {
-    width: 49%;
-    margin: 0px auto;
-    padding: 0px 10px; }
-    @media screen and (max-width: 640px) {
-      .frameprovincial .catequesis {
-        width: 100%; } }
-    .frameprovincial .catequesis .titulo-catequesis {
-      padding: 10px;
-      width: var(--sizem);
-      text-align: center;
-      box-sizing: border-box;
-      margin-bottom: 30px; }
-      .frameprovincial .catequesis .titulo-catequesis h3 {
-        position: relative;
-        margin: auto;
-        --width: 20%;
-        color: #ffffff;
-        font-weight: bold;
-        z-index: 9;
-        font-size: 1.5em; }
-        .frameprovincial .catequesis .titulo-catequesis h3::after {
-          content: "";
-          display: block;
-          height: 3px;
-          width: calc(var(--width)/2);
-          position: absolute;
-          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
-          bottom: -0.8em;
-          background-color: #f1b821;
-          z-index: 100; }
-    .frameprovincial .catequesis .contenido {
-      padding-left: 10px;
-      text-align: center;
-      padding-top: 10px; }
-      .frameprovincial .catequesis .contenido .ingreso {
-        clear: both;
-        margin-top: 20px;
-        padding-top: 20px; }
-        .frameprovincial .catequesis .contenido .ingreso .texto {
-          width: 100%;
-          display: block;
-          clear: both; }
-        .frameprovincial .catequesis .contenido .ingreso .recursos-link {
-          width: 50%;
-          text-align: center;
-          background-color: #f1b821;
-          padding: 15px 80px 15px 80px;
-          margin: 0px auto;
-          box-sizing: border-box;
-          border-radius: 5px;
-          text-align: center;
-          text-transform: uppercase;
-          color: #000000;
-          font-size: 1em;
-          transition: 0.5s ease;
-          cursor: pointer;
-          text-decoration: none;
-          display: block;
-          order: 2; }
-          .frameprovincial .catequesis .contenido .ingreso .recursos-link:hover {
-            transition: 0.5s ease;
-            background-color: #ffffff; }
-      .frameprovincial .catequesis .contenido .lista {
-        color: #f1b821;
-        text-align: left;
-        margin-left: 23px;
-        width: 100%;
-        margin-bottom: 20px; }
-        .frameprovincial .catequesis .contenido .lista .listado li {
-          float: left;
-          list-style: none;
-          padding-bottom: 10px;
-          width: auto;
-          padding-right: 10px;
-          padding-left: 10px; }
-      .frameprovincial .catequesis .contenido p {
-        color: #ffffff; }
-  .frameprovincial .img-provincial {
-    width: 49%;
-    margin: 0px auto;
-    text-align: center; }
-    @media screen and (max-width: 640px) {
-      .frameprovincial .img-provincial {
-        width: 100%; } }
-    .frameprovincial .img-provincial .p-logo {
-      width: 90px;
-      height: 90px;
-      display: block;
-      margin: 0px auto;
-      border-radius: 50%;
-      border: 5px solid #f1b821; }
-  .frameprovincial .p-mensaje {
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    box-sizing: border-box;
-    padding: 30px 0px 20px 0px;
-    line-height: 1.7em; }
-    .frameprovincial .p-mensaje p {
-      margin: 0px;
-      padding: 0px; }
-  .frameprovincial .p-firma {
-    font-family: "Poppins", sans-serif; }
-    .frameprovincial .p-firma .nombre {
-      color: #f1b821;
-      padding: 0px;
-      margin: 0px auto;
-      font-size: 1.125em; }
-      .frameprovincial .p-firma .nombre p {
-        margin: 0px;
-        padding: 0px; }
-    .frameprovincial .p-firma .orden {
-      color: #ffffff;
-      padding: 0px;
-      margin: 0px auto;
-      font-size: 1em; }
-
 /*Orden de predicadores y casa espiritualidad */
 .frameopveritas {
   background-color: green;
@@ -2036,6 +1905,181 @@ input[type=number]::-webkit-outer-spin-button {
         background-color: #f1b821;
         z-index: 100; }
 
+/*==== mensaje provincial ================== */
+.frameprovincial {
+  background-color: #000000;
+  padding: 30px 150px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: space-between; }
+  @media screen and (max-width: 640px) {
+    .frameprovincial {
+      padding: 30px 50px; } }
+  .frameprovincial .catequesis {
+    width: 49%;
+    margin: 0px auto;
+    padding: 0px 10px; }
+    @media screen and (max-width: 640px) {
+      .frameprovincial .catequesis {
+        width: 100%; } }
+    .frameprovincial .catequesis .titulo-catequesis {
+      padding: 10px;
+      width: var(--sizem);
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 30px; }
+      .frameprovincial .catequesis .titulo-catequesis h3 {
+        position: relative;
+        margin: auto;
+        --width: 20%;
+        color: #ffffff;
+        font-weight: bold;
+        z-index: 9;
+        font-size: 1.5em; }
+        .frameprovincial .catequesis .titulo-catequesis h3::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: calc(var(--width)/2);
+          position: absolute;
+          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+          bottom: -0.8em;
+          background-color: #f1b821;
+          z-index: 100; }
+    .frameprovincial .catequesis .contenido {
+      padding-left: 10px;
+      padding-top: 10px; }
+      .frameprovincial .catequesis .contenido .ingresar {
+        display: block;
+        color: #f1b821;
+        transition: 0.5s ease;
+        text-decoration: none;
+        margin-top: 20px;
+        float: right; }
+        .frameprovincial .catequesis .contenido .ingresar:hover {
+          color: #ffffff;
+          transition: 0.5s ease; }
+      .frameprovincial .catequesis .contenido .recurso .pilares-ingreso {
+        display: block;
+        display: flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        text-decoration: none;
+        transition: 0.5s ease;
+        box-sizing: border-box; }
+        .frameprovincial .catequesis .contenido .recurso .pilares-ingreso:hover {
+          transition: 0.5s ease;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+        .frameprovincial .catequesis .contenido .recurso .pilares-ingreso .thumb {
+          width: 50px;
+          height: 50px;
+          margin-right: 10px; }
+          .frameprovincial .catequesis .contenido .recurso .pilares-ingreso .thumb img {
+            width: 100%;
+            display: block; }
+        .frameprovincial .catequesis .contenido .recurso .pilares-ingreso .titulo {
+          font-size: 1em;
+          color: #ffffff;
+          text-decoration: none;
+          transition: 0.5s ease;
+          width: 88%;
+          box-sizing: border-box;
+          margin-left: 4px; }
+          .frameprovincial .catequesis .contenido .recurso .pilares-ingreso .titulo span {
+            text-decoration: none; }
+          .frameprovincial .catequesis .contenido .recurso .pilares-ingreso .titulo:hover {
+            transition: 0.5s ease;
+            color: #f1b821;
+            text-decoration: none; }
+      .frameprovincial .catequesis .contenido .ingreso {
+        clear: both;
+        margin-top: 20px;
+        padding-top: 20px; }
+        .frameprovincial .catequesis .contenido .ingreso .texto {
+          width: 100%;
+          display: block;
+          clear: both; }
+        .frameprovincial .catequesis .contenido .ingreso .recursos-link {
+          width: 50%;
+          text-align: center;
+          background-color: #f1b821;
+          padding: 15px 80px 15px 80px;
+          margin: 0px auto;
+          box-sizing: border-box;
+          border-radius: 5px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #000000;
+          font-size: 1em;
+          transition: 0.5s ease;
+          cursor: pointer;
+          text-decoration: none;
+          display: block;
+          order: 2; }
+          .frameprovincial .catequesis .contenido .ingreso .recursos-link:hover {
+            transition: 0.5s ease;
+            background-color: #ffffff; }
+      .frameprovincial .catequesis .contenido .lista {
+        color: #f1b821;
+        text-align: left;
+        margin-left: 23px;
+        width: 100%;
+        margin-bottom: 20px; }
+        .frameprovincial .catequesis .contenido .lista .listado li {
+          float: left;
+          list-style: none;
+          padding-bottom: 10px;
+          width: auto;
+          padding-right: 10px;
+          padding-left: 10px; }
+      .frameprovincial .catequesis .contenido p {
+        color: #ffffff; }
+  .frameprovincial .img-provincial {
+    width: 49%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px 40px; }
+    @media screen and (max-width: 640px) {
+      .frameprovincial .img-provincial {
+        width: 100%; } }
+    .frameprovincial .img-provincial .p-logo {
+      width: 90px;
+      height: 90px;
+      display: block;
+      margin: 0px auto;
+      border-radius: 50%;
+      border: 5px solid #f1b821; }
+  .frameprovincial .p-mensaje {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 30px 0px 20px 0px;
+    line-height: 1.7em; }
+    .frameprovincial .p-mensaje p {
+      margin: 0px;
+      padding: 0px; }
+  .frameprovincial .p-firma {
+    font-family: "Poppins", sans-serif; }
+    .frameprovincial .p-firma .nombre {
+      color: #f1b821;
+      padding: 0px;
+      margin: 0px auto;
+      font-size: 1.125em; }
+      .frameprovincial .p-firma .nombre p {
+        margin: 0px;
+        padding: 0px; }
+    .frameprovincial .p-firma .orden {
+      color: #ffffff;
+      padding: 0px;
+      margin: 0px auto;
+      font-size: 1em; }
+
+/*======================================================== */
 /*======== Familia Dominicana ============= */
 .framefamilia {
   padding-top: 35px;
@@ -2568,7 +2612,6 @@ input[type=number]::-webkit-outer-spin-button {
             opacity: 0.5; }
 
 .con-general .con .interiores {
-  background-color: red;
   padding: 20px;
   min-height: 639px; }
 .con-general .con .interiores,
