@@ -18,7 +18,7 @@
                 <?php the_title(); ?>
               </div>
             </div>
-            <?php  echo  'estoy en page';      ?>
+            <?php  // echo  'estoy en page';      ?>
             <?php
               while ( have_posts() ) : the_post();
                 the_content();

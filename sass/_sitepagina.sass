@@ -27,7 +27,7 @@
           right: 20px
           bottom: -10px
           content: ""
-          background-color: rgba($m-verde,0.5)
+          background-color: rgba($blanco,0.5)
           height: 1px
           display: block
           width: 97%
@@ -40,7 +40,7 @@
 
               margin-left: 6px
         .titulos-page
-          border-right: 5px solid $celeste
+          border-right: 5px solid $opazul
           padding: 0px 20px 0px 10px
           font-size: 1.0em
           text-align: right
@@ -89,36 +89,48 @@
           flex-flow: column
           .titulo
             margin-right: 14px
+            color: $opamarillo
         &::after
           position: absolute
           right: 20px
           bottom: -10px
           content: ""
-          background-color: rgba($m-verde,0.5)
+          background-color: rgba($opborder,0.3)  /*--- borde para el header tittle*/
           height: 1px
           display: block
           width: 97%
-      .mapeo
+        .titulo
+          .mapeo
+            .breadcrumbs
+              a
+                color: $opamarillo
+                transition: 0.5s ease
+                text-decoration: none
+                &:hover
+                  transition: 0.5s ease
+                  color: $opazul
+        .mapeo
         .current
           display: none
       .titulos-page
-        border-right: 5px solid $celeste
+        border-right: 5px solid $opazul
         padding: 0px 20px 0px 20px
         font-size: 1.125em
         text-align: right
         @media screen and (max-width: 480px)
           padding-right: 10px
   .side
-    padding-top: 20px
+    padding-top: 0px
     .entradas
       background-color: $grisclaro
+      padding-bottom: 0px
       .titulo_entradas
-        @include titulo_cuadro($celeste)
+        @include titulo_cuadro($opgrisoscuro)
         h3
-          font-size: 1.2em
-          color: $blanco
+          font-size: 1.0em
+          color: $opamarillo
           text-transform: uppercase
-          font-family: 'Oswald', sans-serif
+          font-family: $poppins
           margin: 0px
           padding: 0px
   .side
@@ -133,13 +145,20 @@
           margin-bottom: 5px
           padding-bottom: 9px
           overflow: hidden
-          border-bottom: 1px solid #009FFF
+          border-bottom: 1px solid rgba($opgrisoscuro, 0.2)
           text-transform: lowercase
           display: flex
           flex-flow: row wrap
           justify-content: space-between
           align-items: center
           box-sizing: border-box
+          transition: 0.5s ease
+          &:hover
+            border-bottom: 1px solid $opazul
+            transition: 0.5s ease
+          &:nth-last-child(1)
+            border-bottom: none
+            padding-bottom: 20px
           .thumb
             width: 20%
             img
@@ -148,7 +167,7 @@
               float: left
               margin-right: 7px
               box-shadow: 0 0 8px rgba(0, 0, 0, 0.8)
-              border: 2px solid #ffffff
+              border: 2px solid $opnoticias
               width: 90%
               &:hover
                 filter: alpha(opacity=50)
@@ -163,14 +182,14 @@
       .recientes
         .list
           .title
-            color: #009FFF
+            color: $opgriso
             line-height: 1.3em
-            font-size: 1.1em
+            font-size: 1.0em
             text-decoration: none
             width: 78%
             text-transform: lowercase
             &:hover
-              color: #d53132
+              color: $m-tinto
               transition: 0.5s ease
               -o-transition: 0.5s ease
               -webkit-transition: 0.5s ease

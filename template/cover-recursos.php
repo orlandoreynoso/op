@@ -13,9 +13,8 @@ $id_recursos = 113;
          the_post_thumbnail('medium');
         }
         else{ ?>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dar-la-vida-por-los-demas.jpg" alt="">
-        <?php  }         ?>
-        
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/santo-tomas-aquino.jpg" alt="">
+        <?php  }     ?>        
       </div>
       <div class="titulo">
         <!-- i class="fa fa-angle-double-right"></i -->

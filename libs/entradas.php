@@ -76,7 +76,16 @@ if ( $the_query->have_posts() ) {
         $the_query->the_post();
         ?>
 <div class="list">
-    <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+    <a class="thumb" href="<?php the_permalink(); ?>">
+        <?php
+        if(has_post_thumbnail()){
+            the_post_thumbnail('thumbnail'); 
+        }
+        else{ ?>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/santo-tomas-aquino.jpg" alt="">
+        <?php  }     ?>        
+            
+    </a>
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 </div>
         <?php }} else {

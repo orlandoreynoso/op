@@ -2647,7 +2647,7 @@ input[type=number]::-webkit-outer-spin-button {
       right: 20px;
       bottom: -10px;
       content: "";
-      background-color: rgba(70, 178, 113, 0.5);
+      background-color: rgba(255, 255, 255, 0.5);
       height: 1px;
       display: block;
       width: 97%; }
@@ -2667,7 +2667,7 @@ input[type=number]::-webkit-outer-spin-button {
     .con-general .con .interiores .header-title-cpt .titulos-page,
     .con-general .con .interiores-comunidad .header-title-cpt .titulos-page,
     .con-general .con .interior-horarios-misa .header-title-cpt .titulos-page {
-      border-right: 5px solid #009FFF;
+      border-right: 5px solid #293449;
       padding: 0px 20px 0px 10px;
       font-size: 1em;
       text-align: right; }
@@ -2743,7 +2743,8 @@ input[type=number]::-webkit-outer-spin-button {
         .con-general .con .interiores .header-title .titulo,
         .con-general .con .interiores-comunidad .header-title .titulo,
         .con-general .con .interior-horarios-misa .header-title .titulo {
-          margin-right: 14px; } }
+          margin-right: 14px;
+          color: #f1b821; } }
     .con-general .con .interiores .header-title::after,
     .con-general .con .interiores-comunidad .header-title::after,
     .con-general .con .interior-horarios-misa .header-title::after {
@@ -2751,18 +2752,29 @@ input[type=number]::-webkit-outer-spin-button {
       right: 20px;
       bottom: -10px;
       content: "";
-      background-color: rgba(70, 178, 113, 0.5);
+      background-color: rgba(241, 145, 0, 0.3);
       height: 1px;
       display: block;
       width: 97%; }
-  .con-general .con .interiores .mapeo .current,
-  .con-general .con .interiores-comunidad .mapeo .current,
-  .con-general .con .interior-horarios-misa .mapeo .current {
-    display: none; }
+    .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs a,
+    .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs a,
+    .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs a {
+      color: #f1b821;
+      transition: 0.5s ease;
+      text-decoration: none; }
+      .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs a:hover,
+      .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs a:hover,
+      .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs a:hover {
+        transition: 0.5s ease;
+        color: #293449; }
+    .con-general .con .interiores .header-title .current,
+    .con-general .con .interiores-comunidad .header-title .current,
+    .con-general .con .interior-horarios-misa .header-title .current {
+      display: none; }
   .con-general .con .interiores .titulos-page,
   .con-general .con .interiores-comunidad .titulos-page,
   .con-general .con .interior-horarios-misa .titulos-page {
-    border-right: 5px solid #009FFF;
+    border-right: 5px solid #293449;
     padding: 0px 20px 0px 20px;
     font-size: 1.125em;
     text-align: right; }
@@ -2772,18 +2784,19 @@ input[type=number]::-webkit-outer-spin-button {
       .con-general .con .interior-horarios-misa .titulos-page {
         padding-right: 10px; } }
 .con-general .side {
-  padding-top: 20px; }
+  padding-top: 0px; }
   .con-general .side .entradas {
-    background-color: #f2f2f2; }
+    background-color: #f2f2f2;
+    padding-bottom: 0px; }
     .con-general .side .entradas .titulo_entradas {
-      background-color: #009FFF;
+      background-color: #333333;
       padding: 24px 0px 17px 25px;
       box-sizing: border-box; }
       .con-general .side .entradas .titulo_entradas h3 {
-        font-size: 1.2em;
-        color: #ffffff;
+        font-size: 1em;
+        color: #f1b821;
         text-transform: uppercase;
-        font-family: "Oswald", sans-serif;
+        font-family: "Poppins", sans-serif;
         margin: 0px;
         padding: 0px; }
 .con-general .side .entradas .recientes {
@@ -2796,13 +2809,20 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 5px;
     padding-bottom: 9px;
     overflow: hidden;
-    border-bottom: 1px solid #009FFF;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     text-transform: lowercase;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    transition: 0.5s ease; }
+    .con-general .side .entradas .recientes .list:hover {
+      border-bottom: 1px solid #293449;
+      transition: 0.5s ease; }
+    .con-general .side .entradas .recientes .list:nth-last-child(1) {
+      border-bottom: none;
+      padding-bottom: 20px; }
     .con-general .side .entradas .recientes .list .thumb {
       width: 20%; }
       .con-general .side .entradas .recientes .list .thumb img {
@@ -2811,7 +2831,7 @@ input[type=number]::-webkit-outer-spin-button {
         float: left;
         margin-right: 7px;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-        border: 2px solid #ffffff;
+        border: 2px solid #f3f3f3;
         width: 90%; }
         .con-general .side .entradas .recientes .list .thumb img:hover {
           filter: alpha(opacity=50);
@@ -2822,14 +2842,14 @@ input[type=number]::-webkit-outer-spin-button {
           box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
 
 .con-general .side .entradas .recientes .list .title {
-  color: #009FFF;
+  color: #252525;
   line-height: 1.3em;
-  font-size: 1.1em;
+  font-size: 1em;
   text-decoration: none;
   width: 78%;
   text-transform: lowercase; }
   .con-general .side .entradas .recientes .list .title:hover {
-    color: #d53132;
+    color: #4e1b20;
     transition: 0.5s ease;
     -o-transition: 0.5s ease;
     -webkit-transition: 0.5s ease; }
