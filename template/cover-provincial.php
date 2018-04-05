@@ -20,6 +20,6 @@
   <div class="contenido">
     <!-- p class="texto">Últimos ingresos:</p -->
     <?php get_template_part( 'template/cover', 'recursos'); ?>
-    <a class="ingresar" href="#">Ingresar para más recursos</a>
+    <?php get_template_part('template/cover', 'portadarecursos'); ?>
   </div>
 </div>
