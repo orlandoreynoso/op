@@ -3,8 +3,8 @@
 <?php
 
 /*
-  Template Name: Contenidos para la comunidad
-  Template Post Type: post, page, product, post_type, post type
+
+
 */
 
  get_header();

@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: Agrupaciones
+  Template Name: Contenido agrupado
   Template Post Type: post, page, product, agrupaciones
 */
  get_header();
@@ -14,7 +14,7 @@
               <div class="titulo">
                 <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
               </div>
-              <?php echo "agrupacionessss"; ?>
+              <?php // echo "agrupacionessss"; ?>
               <div class="titulos-page">
                 <?php the_title(); ?>
               </div>
@@ -50,10 +50,10 @@
                       <?php /*==============*/
 
                       if(has_post_thumbnail()){
-                        the_post_thumbnail('medium');
+                        the_post_thumbnail('desglose_pagina');
                       }
                       else{ ?>
-                        <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
+                        <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/santo-tomas-aquino.jpg" alt="">
                       <?php }
                       ?>
                       </div>

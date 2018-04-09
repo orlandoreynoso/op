@@ -55,6 +55,8 @@ add_image_size('presencia', 606, 476, true);
 add_image_size('plan', 260, 329, true);
 add_image_size('noticias', 418, 314, true);
 add_image_size('pilares', 300, 214, true);
+add_image_size('desglose', 236, 125, true);
+add_image_size('desglose_pagina', 278, 209, true);
 //add_image_size('pilares', 362, 333, true);
 //add_image_size('pilares', 352, 323, true);
 //add_image_size('pilares', 181, 111, true);

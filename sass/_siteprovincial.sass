@@ -7,14 +7,17 @@
 	flex-flow: row wrap
 	box-sizing: border-box
 	justify-content: space-between
-	@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
-		padding: 30px 50px
+	@media screen and ( max-width: 900px ) /*=== 0 a 640px== para movil===*/
+		padding: 40px 0px 0px 0px
 	.catequesis
 		width: 49%
 		margin: 0px auto
 		padding: 0px 10px
-		@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+		@media screen and ( max-width: 900px ) /*=== 0 a 640px== para movil===*/
 			width: 100%
+			margin-top: 20px
+			background-color: $opgris
+			padding: 20px
 		.titulo-catequesis
 			@include tituloafterop($blanco,$opamarillo,1.500)
 		.contenido
@@ -47,8 +50,10 @@
 						width: 50px
 						height: 50px
 						margin-right: 10px
+						overflow: hidden
 						img
 							width: 100%
+							height: auto
 							display: block
 					.titulo
 						font-size: 1em
@@ -113,7 +118,7 @@
 		margin: 0px auto
 		text-align: center
 		padding: 0px 40px
-		@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
+		@media screen and ( max-width: 900px ) /*=== 0 a 640px== para movil===*/
 			width: 100%
 		.p-logo
 			width: 90px

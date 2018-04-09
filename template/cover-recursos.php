@@ -10,7 +10,7 @@ $id_recursos = 113;
       <div class="thumb">      
         <?php
         if(has_post_thumbnail()){
-         the_post_thumbnail('medium');
+         the_post_thumbnail('desglose_pagina');
         }
         else{ ?>
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/santo-tomas-aquino.jpg" alt="">
