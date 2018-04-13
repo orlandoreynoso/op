@@ -218,7 +218,7 @@ include (TEMPLATEPATH . '/libs/totop.php');
 include (TEMPLATEPATH . '/libs/breadcrumb.php');
 
 include (TEMPLATEPATH . '/files/bread.php');
-include (TEMPLATEPATH . '/files/paginacioncustom.php');
+//include (TEMPLATEPATH . '/files/paginacioncustom.php');
 include (TEMPLATEPATH. '/inc/paginacioncpt.php');
 
 /*==== n Widget=====*/
