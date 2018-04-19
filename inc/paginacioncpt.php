@@ -42,7 +42,7 @@ function custom_pagination_msc($numpages = '', $pagerange = '', $paged='') {
 
 	if ($paginate_links) {
 		echo "<div class='pagination'>";
-		echo "<div class='left'>Page " . $paged . " of " . $numpages . "</div> ";
+		echo "<div class='left'>Páginas " . $paged . " de " . $numpages . "</div> ";
 		echo "<div class='right'>" . $paginate_links . "</div> ";
 		echo "</div>";
 	}

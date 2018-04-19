@@ -12,7 +12,6 @@
      <div class="row">
         <div class="col-xs-12 col-md-8 con">
           <div class="interiores">
-            <?php echo "archive nuestros pilares"; ?>
             <div class="header-title">
               <div class="titulo">
                 <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
@@ -21,6 +20,7 @@
                 <?php post_type_archive_title(); ?>
               </div>
             </div>
+            <!-- p> echo "archive nuestros pilares" </p -->
 
             <?php   $pagina_id = get_the_ID();
 
@@ -43,7 +43,7 @@
 
           <?php $presentaciones = new WP_Query($args); ?>
 
-          <div class="presentaciones-desglose">
+          <div class="presentaciones-desglose archives-pages">
             <?php // echo "template pastorales"; ?>
                 <div class="c-presentaciones">
 
@@ -69,9 +69,10 @@
                           // the_title();
                             $titulo = get_the_title();
                             $nuevo_titulo = wp_trim_words( $titulo, 12, '...' );
-                            echo '"'.$nuevo_titulo.'"';
+                            echo ''.$nuevo_titulo.'';
                            ?></h3>
                         </div>
+                        <?php /*
                         <div class="cuadro-fecha">
                           <span class="titulo-fecha">
                             Presentación &raquo;
@@ -80,6 +81,7 @@
                             <?php echo "" . get_post_meta( get_the_ID(), 'info_page_fecha', true ) . ""; ?>
                           </span>
                         </div>
+                        */ ?>
                       </div>
                       </a>
                     </div>

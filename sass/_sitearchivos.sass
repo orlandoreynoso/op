@@ -1,0 +1,79 @@
+.archives-pages
+	box-sizing: border-box
+	width: var(--sizem)
+	.c-presentaciones
+		box-sizing: border-box
+		width: var(--sizem)
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		.list
+			width: calc(( var(--sizem) / 3 ) - 10px)
+			box-sizing: border-box
+			margin-right: 5px
+			display: block
+			margin-bottom: 30px
+			@media screen and (max-width: 1000px) and (min-width: 767px)
+				width: calc(( var(--sizem) / 3 ) - 10px)
+				overflow: hidden
+			@media screen and (min-width: 1000px)
+				width: calc(( var(--sizem) / 3 ) - 10px)			
+			@media screen and (max-width: 768px)
+				width: calc(( var(--sizem) / 2 ) - 10px)
+			@media screen and (max-width: 570px)
+				width: calc(( var(--sizem) / 1 ) - 10px)				
+			.todo
+				width: 100%
+				box-sizing: border-box
+				a.enlace
+					width: 100%
+					display: block
+					box-sizing: border-box
+					margin: 0px
+					padding: 0px
+					transition: 0.5s ease
+					text-decoration: none
+					&:hover
+						.thumb
+							transition: 0.5s ease
+							opacity: 0.8
+						.textos
+							.titulo
+								h3
+									color: $opborder
+									transition: 0.5s ease
+					.thumb
+						width: 210px
+						display: block
+						box-sizing: border-box
+						margin: 0px
+						padding: 0px
+						@media screen and (max-width: 1000px) and (min-width: 767px)
+							width: 150px
+							overflow: hidden
+						@media screen and (min-width: 1000px)
+							width: 100%
+						@media screen and (max-width: 570px)
+							width: 100%
+						@media screen and (max-width: 321px)
+							width: 100%
+						img
+							width: 100%
+							height: auto
+							display: block
+							margin: 0px
+							padding: 0px
+							@media screen and (max-width: 1000px) and (min-width: 767px)
+								width: 150px
+					.textos
+						margin-top: 15px
+						text-align: center					
+						.titulo
+							h3
+								font-size: 1em
+								color: $opgris
+								font-weight: bold
+								text-transform: uppercase
+								transition: 0.5s ease
+						.cuadro-fecha	
+/*===================================================*/					
