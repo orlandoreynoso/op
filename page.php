@@ -8,7 +8,7 @@
 <section class="con-general">
   <div class="container">
      <div class="row">
-          <div class="col-xs-12 col-md-8 con">
+          <div class="col-xs-12 col-md-8 con page-con">
           <div class="interiores">
             <div class="header-title">
               <div class="titulo">
@@ -19,12 +19,14 @@
               </div>
             </div>
             <?php  // echo  'estoy en page';      ?>
-            
-            <?php
-              while ( have_posts() ) : the_post();
-                the_content();
-              endwhile;
-            ?>
+            <div class="page-contenido"> 
+            <!-- p>Estoy en la plantilla Página......</p -->     
+              <?php
+                while ( have_posts() ) : the_post();
+                  the_content();
+                endwhile;
+              ?>
+            </div>
           </div>
        </div>
         <div class="col-xs-12 col-md-4 side">

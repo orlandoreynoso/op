@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: ARchivos nuestros pilares
+  Template Name: Page nuestros pilares
   Template Post Type: post, page, product, peregrinaciones
 */
  get_header();
@@ -20,7 +20,7 @@
                 <?php post_type_archive_title(); ?>
               </div>
             </div>
-            <p> echo "archive nuestros pilares" </p>
+            <p> TEmplate pagina nuestros pilares" </p>
 
             <?php   $pagina_id = get_the_ID();
 

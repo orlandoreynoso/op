@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: Contenido agrupado
+  Template Name: Template Plan de Vida
   Template Post Type: post, page, product, agrupaciones
 */
  get_header();
