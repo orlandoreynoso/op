@@ -2,7 +2,8 @@
 #no incluir esta carpeta
 /node_modules
 #no incluis este archivo
-gulpfile.js
+package.json
+package-lock.json
 #no incluir el js.
 package.json
 #no inclir php work.
