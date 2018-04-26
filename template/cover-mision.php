@@ -4,6 +4,7 @@
   'post_type' => 'mision',
   'posts_per_page' => -1,
   'orderby'   => 'menu_order',
+  'post_parent' => 0,              
   'order'     => 'ASC'
   );
 

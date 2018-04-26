@@ -6,7 +6,24 @@
     <?php the_title(); ?>
   </div>
 </div>
-<?php  echo "estoy en ".get_the_ID(); ?>
+<p>-------------------------------------------------------</p>
+<div class="header-title-cpt">
+  <div class="titulo">
+    <div class="mapeo">
+      <?php dimox_breadcrumbs(); ?>
+      <div class="father_title">
+          <a href="<?php echo get_the_permalink(get_post_ancestor_id()); ?>">
+          <?php echo get_the_title( get_post_ancestor_id()); ?>
+         </a>
+     </div>
+    </div>
+  </div>
+  <div class="titulos-page">
+    <?php the_title(); ?>
+  </div>
+</div>
+<p>-------------------------------------------------------</p>
+<?php  echo "estoy en ".get_the_ID() . "cpt-padre.php"; ?>
 <?php $pagina_id = get_the_ID(); ?>
 <div class="agrupaciones-desglose"><!-- Inicio id agrupaciones-desglose -->
   <div class="c-agrupaciones">

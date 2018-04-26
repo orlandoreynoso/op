@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: archivo para Plan de Vida
+  Template Name: Template Plan de Vida
   Template Post Type: post, page, product, peregrinaciones
 */
  get_header();
@@ -12,20 +12,17 @@
      <div class="row">
         <div class="col-xs-12 col-md-8 con">
           <div class="interiores">
-            <?php // echo "Archive para plan de vida"; ?>
             <div class="header-title">
               <div class="titulo">
                 <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
               </div>
               <div class="titulos-page">
-                <?php //post_type_archive_title(); ?>
-                Plan de vida
+                <?php post_type_archive_title(); ?>
               </div>
             </div>
+            <p> Archive plan de vida. </p>
 
-            <?php   $pagina_id = get_the_ID();
-
-               ?>
+            <?php   $pagina_id = get_the_ID();   ?>
 
             <?php
 
@@ -36,6 +33,7 @@
               'post_status' => 'publish',
               'orderby' => 'date',
               'order' => 'DESC',
+              'post_parent' => 0,              
 //              'posts_per_page' => 4,
               'paged' => $paged,
             );
@@ -44,7 +42,7 @@
 
           <?php $presentaciones = new WP_Query($args); ?>
 
-          <div class="presentaciones-desglose">
+          <div class="presentaciones-desglose archives-pages">
             <?php // echo "template pastorales"; ?>
                 <div class="c-presentaciones">
 
@@ -60,7 +58,7 @@
                         the_post_thumbnail('medium');
                       }
                       else{ ?>
-                        <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
+                        <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/santo-tomas-aquino.jpg" alt="">
                       <?php }
                       ?>
                       </div>
@@ -70,9 +68,10 @@
                           // the_title();
                             $titulo = get_the_title();
                             $nuevo_titulo = wp_trim_words( $titulo, 12, '...' );
-                            echo '"'.$nuevo_titulo.'"';
+                            echo ''.$nuevo_titulo.'';
                            ?></h3>
                         </div>
+                        <?php /*
                         <div class="cuadro-fecha">
                           <span class="titulo-fecha">
                             Presentación &raquo;
@@ -81,16 +80,17 @@
                             <?php echo "" . get_post_meta( get_the_ID(), 'info_page_fecha', true ) . ""; ?>
                           </span>
                         </div>
+                        */ ?>
                       </div>
                       </a>
                     </div>
                     </div>
                   <?php endwhile; ?>
                   <div class="navigationpresentaciones">
-                    <?php //if (function_exists(custom_pagination)) { ?>
-                    	<div class="col-sm-12 inner-sm">
-                    		<?php custom_pagination_msc($my_query->max_num_pages, "", $paged); ?>
-                    	</div>
+                    <?php // if (function_exists(custom_pagination_msc)) { ?>
+                      <div class="col-sm-12 inner-sm">
+                        <?php custom_pagination_msc($my_query->max_num_pages, "", $paged); ?>
+                      </div>
                     <?php // } ?>
                   </div>
                   <?php

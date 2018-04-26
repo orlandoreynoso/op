@@ -1,14 +1,9 @@
-<?php 
-
-?>
-
-
+<?php  ?>
 <div class="list">
 	<div class="todo">
 		<a class="ir-agrupacion" href="<?php the_permalink(); ?>">
 			<div class="thumb" >
 				<?php 
-				/*==============*/
 					if(has_post_thumbnail()){
 					the_post_thumbnail('medium');
 					}
@@ -21,3 +16,4 @@
 		<!-- div class="exe"><?php // excerpt('15'); ?> </div -->
 	</div>
 </div>
+<?php  ?>

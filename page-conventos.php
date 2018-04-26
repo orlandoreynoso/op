@@ -1,11 +1,10 @@
 <?php
 /*
-  Template Name: Template Plan de Vida
+  Template Name: Template Conventos
   Template Post Type: post, page, product, agrupaciones
 */
  get_header();
 ?>
-<?php echo "pagina plan de vida"; ?>
 <section class="con-general">
   <div class="container">
      <div class="row">
@@ -15,7 +14,7 @@
               <div class="titulo">
                 <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
               </div>
-              <?php echo "pagina plan de vida"; ?>
+              <?php  // echo "page conventos"; ?>
               <div class="titulos-page">
                 <?php the_title(); ?>
               </div>
@@ -32,7 +31,7 @@
             echo "</pre>"; */
 
               ?>
-          <div class="agrupaciones-desglose">
+          <div class="cpt-desglose">
             <?php // echo "template pastorales"; ?>
                 <div class="c-agrupaciones">
                   <?php $the_query = new WP_Query(contenidosPorId('page',$pagina_id,-1)); ?>
@@ -57,6 +56,11 @@
                         <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/santo-tomas-aquino.jpg" alt="">
                       <?php }
                       ?>
+                        <div class="info-metaboxes">
+                          <span class="pais">
+                            <?php echo "" . get_post_meta( get_the_ID(), 'info_adicional_titulo_pais', true ) . ""; ?>
+                          </span>
+                        </div>                      
                       </div>
 
                         <?php /*==============*/ ?>

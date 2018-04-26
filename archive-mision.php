@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: ARchivos nuestros pilares
+  Template Name: Template Misión
   Template Post Type: post, page, product, peregrinaciones
 */
  get_header();
@@ -20,7 +20,7 @@
                 <?php post_type_archive_title(); ?>
               </div>
             </div>
-            <!-- p> echo "archive nuestros pilares" </p -->
+            <!-- p> Archive Principales ejes de misión </p -->
 
             <?php   $pagina_id = get_the_ID();   ?>
 
@@ -29,11 +29,11 @@
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
             $args = array(
-              'post_type' => 'nuestrospilares',
+              'post_type' => 'mision',
               'post_status' => 'publish',
               'orderby' => 'date',
               'order' => 'DESC',
-              'post_parent' => 0,              
+              'post_parent' => 0,
 //              'posts_per_page' => 4,
               'paged' => $paged,
             );
@@ -70,17 +70,16 @@
                             $nuevo_titulo = wp_trim_words( $titulo, 12, '...' );
                             echo ''.$nuevo_titulo.'';
                            ?></h3>
-                        </div>
-                        <?php /*
-                        <div class="cuadro-fecha">
+                        </div>                        
+                        <!-- div class="cuadro-fecha">
                           <span class="titulo-fecha">
                             Presentación &raquo;
                           </span>
                           <span class="fecha">
-                            <?php echo "" . get_post_meta( get_the_ID(), 'info_page_fecha', true ) . ""; ?>
+                            <?php // echo "" . get_post_meta( get_the_ID(), 'info_page_fecha', true ) . ""; ?>
                           </span>
-                        </div>
-                        */ ?>
+                        </div -->
+                        
                       </div>
                       </a>
                     </div>

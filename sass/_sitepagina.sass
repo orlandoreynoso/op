@@ -35,7 +35,6 @@
           .mapeo
             display: flex
             .father_title
-
               margin-left: 6px
         .titulos-page
           border-right: 5px solid $opazul
@@ -100,6 +99,7 @@
         .titulo
           .mapeo
             .breadcrumbs
+              float: left
               a
                 color: $opamarillo
                 transition: 0.5s ease
@@ -107,6 +107,16 @@
                 &:hover
                   transition: 0.5s ease
                   color: $opazul
+            .father_title
+              float: left
+              margin-left: 6px
+              a
+                color: $opamarillo
+                text-decoration: none
+                transition: 0.5s ease
+                &:hover
+                  color: $opazul
+                  transition: 0.5s ease
         .mapeo
         .current
           display: none
@@ -193,3 +203,14 @@
               -webkit-transition: 0.5s ease
             &:first-letter
               text-transform: uppercase
+/*===== Contenido para Single ===============================*/
+.con-general
+  .con
+    .interiores
+      .info-single
+        background-color: none
+        h1
+          margin-bottom: 20px
+          margin-top: 10px         
+
+        

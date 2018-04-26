@@ -11,20 +11,77 @@
         color: $m-tinto
       .contacto-provincia
         .btn-envio-provincia
-          background-color: red
           .nf-field-element
-            background-color: green
+            input
+              background-color: $opazul
+              color: $blanco
+              width: 250px
+              transition: 0.5s ease
+              &:hover
+                transition: 0.5s ease
+                background-color: $opgrisoscuro
+                color: $blanco
       .nf-form-cont
         margin-top: 30px
         .nf-form-title
           h3
             display: none
-/*============================*/      
+/*======= css para template pagina ===============*/      
 .con-general
   .page-con
     .interiores
       .header-title
       .page-contenido
+        h1:nth-child(1)
+          margin-bottom: 30px
+          margin-top: 30px
+          line-height: 1.3em          
+        h2
+          margin-bottom: 20px
+          margin-top: 20px
+          line-height: 1.3em
+        .bwg_container1_0
+          padding: 30px
+        #gal_front_form_0
+          padding: 20px
+          #bwg_standart_thumbnails_0
+          .bwg_nav_cont_0
+/*===== galeri ===========*/
+.bwg_image_wrap
+  .bwg_image_container
+    #spider_popup_left
+      #spider_popup_left-ico
+        span
+          i
+            font-size: 1.5em
+            color: $colorlogo            
+            transition: 0.5s ease        
+            &:hover
+              transition: 0.5s ease
+              color: $celeste            
+    #spider_popup_right
+      #spider_popup_right-ico
+        span
+          i
+            font-size: 1.5em
+            color: $colorlogo
+            transition: 0.5s ease        
+            &:hover
+              transition: 0.5s ease
+              color: $celeste            
+.spider_popup_wrap
+  .spider_popup_close_fullscreen
+    padding: 2px
+#spider_popup_wrap a
+  background-color: transparent
+  span
+    i
+      font-size: 1.5em
+      color: $colorlogo
+      transition: 0.5s ease        
+      &:hover
+        transition: 0.5s ease
+        color: $m-verde  
 /*==========================*/  
 .section-bienvenida
   width: var(--sizem)

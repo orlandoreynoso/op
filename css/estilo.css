@@ -216,7 +216,6 @@
 .e-menu .sticky-wrapper {
   height: auto !important; }
 .e-menu #menu-desk {
-  z-index: 99999999 !important;
   position: sticky;
   display: block;
   opacity: 1 !important; }
@@ -2456,16 +2455,63 @@ input[type=number]::-webkit-outer-spin-button {
     color: #333333; }
   .con-general .con .interiores h3 {
     color: #4e1b20; }
-  .con-general .con .interiores .contacto-provincia .btn-envio-provincia {
-    background-color: red; }
-    .con-general .con .interiores .contacto-provincia .btn-envio-provincia .nf-field-element {
-      background-color: green; }
+  .con-general .con .interiores .contacto-provincia .btn-envio-provincia .nf-field-element input {
+    background-color: #293449;
+    color: #ffffff;
+    width: 250px;
+    transition: 0.5s ease; }
+    .con-general .con .interiores .contacto-provincia .btn-envio-provincia .nf-field-element input:hover {
+      transition: 0.5s ease;
+      background-color: #333333;
+      color: #ffffff; }
   .con-general .con .interiores .nf-form-cont {
     margin-top: 30px; }
     .con-general .con .interiores .nf-form-cont .nf-form-title h3 {
       display: none; }
 
-/*============================ */
+/*======= css para template pagina =============== */
+.con-general .page-con .interiores .page-contenido h1:nth-child(1) {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 1.3em; }
+.con-general .page-con .interiores .page-contenido h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  line-height: 1.3em; }
+.con-general .page-con .interiores .page-contenido .bwg_container1_0 {
+  padding: 30px; }
+.con-general .page-con .interiores .page-contenido #gal_front_form_0 {
+  padding: 20px; }
+
+/*===== galeri =========== */
+.bwg_image_wrap .bwg_image_container #spider_popup_left #spider_popup_left-ico span i {
+  font-size: 1.5em;
+  color: #b20013;
+  transition: 0.5s ease; }
+  .bwg_image_wrap .bwg_image_container #spider_popup_left #spider_popup_left-ico span i:hover {
+    transition: 0.5s ease;
+    color: #009FFF; }
+.bwg_image_wrap .bwg_image_container #spider_popup_right #spider_popup_right-ico span i {
+  font-size: 1.5em;
+  color: #b20013;
+  transition: 0.5s ease; }
+  .bwg_image_wrap .bwg_image_container #spider_popup_right #spider_popup_right-ico span i:hover {
+    transition: 0.5s ease;
+    color: #009FFF; }
+
+.spider_popup_wrap .spider_popup_close_fullscreen {
+  padding: 2px; }
+
+#spider_popup_wrap a {
+  background-color: transparent; }
+  #spider_popup_wrap a span i {
+    font-size: 1.5em;
+    color: #b20013;
+    transition: 0.5s ease; }
+    #spider_popup_wrap a span i:hover {
+      transition: 0.5s ease;
+      color: #46b271; }
+
 /*========================== */
 .section-bienvenida {
   width: var(--sizem);
@@ -2776,17 +2822,37 @@ input[type=number]::-webkit-outer-spin-button {
     height: 1px;
     display: block;
     width: 97%; }
-  .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs a,
-  .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs a,
-  .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs a {
-    color: #f1b821;
-    transition: 0.5s ease;
-    text-decoration: none; }
-    .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs a:hover,
-    .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs a:hover,
-    .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs a:hover {
+  .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs,
+  .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs,
+  .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs {
+    float: left; }
+    .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs a,
+    .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs a,
+    .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs a {
+      color: #f1b821;
       transition: 0.5s ease;
-      color: #293449; }
+      text-decoration: none; }
+      .con-general .con .interiores .header-title .titulo .mapeo .breadcrumbs a:hover,
+      .con-general .con .interiores-comunidad .header-title .titulo .mapeo .breadcrumbs a:hover,
+      .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .breadcrumbs a:hover {
+        transition: 0.5s ease;
+        color: #293449; }
+  .con-general .con .interiores .header-title .titulo .mapeo .father_title,
+  .con-general .con .interiores-comunidad .header-title .titulo .mapeo .father_title,
+  .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .father_title {
+    float: left;
+    margin-left: 6px; }
+    .con-general .con .interiores .header-title .titulo .mapeo .father_title a,
+    .con-general .con .interiores-comunidad .header-title .titulo .mapeo .father_title a,
+    .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .father_title a {
+      color: #f1b821;
+      text-decoration: none;
+      transition: 0.5s ease; }
+      .con-general .con .interiores .header-title .titulo .mapeo .father_title a:hover,
+      .con-general .con .interiores-comunidad .header-title .titulo .mapeo .father_title a:hover,
+      .con-general .con .interior-horarios-misa .header-title .titulo .mapeo .father_title a:hover {
+        color: #293449;
+        transition: 0.5s ease; }
   .con-general .con .interiores .header-title .current,
   .con-general .con .interiores-comunidad .header-title .current,
   .con-general .con .interior-horarios-misa .header-title .current {
@@ -2875,6 +2941,13 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-transition: 0.5s ease; }
   .con-general .side .entradas .recientes .list .title:first-letter {
     text-transform: uppercase; }
+
+/*===== Contenido para Single =============================== */
+.con-general .con .interiores .info-single {
+  background-color: none; }
+  .con-general .con .interiores .info-single h1 {
+    margin-bottom: 20px;
+    margin-top: 10px; }
 
 .navigationpresentaciones {
   border-top: 1px solid #354252;
@@ -3140,7 +3213,11 @@ input[type=number]::-webkit-outer-spin-button {
                 width: 100%; } }
         .agrupaciones-desglose .c-agrupaciones .list .todo .exe {
           margin-top: 10px; }
+      .agrupaciones-desglose .c-agrupaciones .list .info-metaboxes .pais {
+        font-size: 0.9em;
+        color: #293449; }
 
+/*=============================================== */
 /*==================== */
 .con-general .con .interiores-comunidad {
   padding-top: 20px; }
@@ -3536,6 +3613,120 @@ input[type=number]::-webkit-outer-spin-button {
               transition: 0.5s ease; }
 
 /*=================================================== */
+.cpt-desglose {
+  box-sizing: border-box; }
+  .cpt-desglose .c-agrupaciones {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-sizing: border-box; }
+    .cpt-desglose .c-agrupaciones .titulo-pastorales {
+      padding: 10px;
+      width: var(--sizem);
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 30px; }
+      .cpt-desglose .c-agrupaciones .titulo-pastorales h3 {
+        position: relative;
+        margin: auto;
+        --width: 20%;
+        color: #293449;
+        font-weight: bold;
+        z-index: 9; }
+        .cpt-desglose .c-agrupaciones .titulo-pastorales h3::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: calc(var(--width)/2);
+          position: absolute;
+          left: calc( calc( 100% - ( calc(var(--width)/2)) ) / 2 );
+          bottom: -0.8em;
+          background-color: #b20013;
+          z-index: 100; }
+    .cpt-desglose .c-agrupaciones .list {
+      box-sizing: border-box;
+      width: calc(var(--sizem)/4);
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 12px; }
+      @media screen and (max-width: 640px) {
+        .cpt-desglose .c-agrupaciones .list {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        .cpt-desglose .c-agrupaciones .list {
+          width: 33%; } }
+      @media screen and (max-width: 480px) {
+        .cpt-desglose .c-agrupaciones .list {
+          width: 100%; } }
+      @media screen and (max-width: 360px) {
+        .cpt-desglose .c-agrupaciones .list {
+          width: 100%; } }
+      .cpt-desglose .c-agrupaciones .list .todo {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s ease;
+        overflow: hidden;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ffffff; }
+        .cpt-desglose .c-agrupaciones .list .todo:hover {
+          border-bottom: 1px solid #f1b821; }
+        .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion {
+          padding: 5px 5px 10px 5px;
+          display: block;
+          text-decoration: none;
+          transition: 0.5s ease; }
+          .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion:hover {
+            color: #f19100; }
+            .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion:hover h5 {
+              color: #f19100; }
+          .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion h5 {
+            font-size: 0.9em;
+            line-height: 1.5em;
+            font-family: "Open Sans", Arial, sans-serif;
+            margin-left: 5px;
+            font-weight: 600;
+            color: #293449;
+            margin-top: 15px; }
+          .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb {
+            width: 100%;
+            height: 150px;
+            display: block;
+            transition: 0.5s ease;
+            position: relative; }
+            .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb img {
+              width: 100%;
+              height: 100%;
+              margin: 0px auto;
+              text-align: center;
+              vertical-align: top;
+              display: block; }
+              @media screen and (max-width: 640px) {
+                .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb img {
+                  height: auto; } }
+              .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb img:hover {
+                filter: alpha(opacity=70);
+                -moz-opacity: 1;
+                opacity: 0.7;
+                -khml-opacity: 1;
+                transition: 0.5s ease; }
+            @media screen and (max-width: 640px) {
+              .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb {
+                height: auto;
+                width: 100%; } }
+            .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb .info-metaboxes {
+              position: absolute;
+              background-color: #f1b821;
+              padding: 0px 4px;
+              right: 0px;
+              bottom: 0px; }
+              .cpt-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb .info-metaboxes .pais {
+                font-size: 0.8em;
+                color: #293449; }
+        .cpt-desglose .c-agrupaciones .list .todo .exe {
+          margin-top: 10px; }
+
+/*=============================================== */
 .framesuscripcion {
   background-color: #131313;
   padding: 20px;
