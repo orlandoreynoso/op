@@ -11,6 +11,42 @@
         <p>Prior Privincial</p>
     </div>
   </div>
+  <div class="link-provincial">
+      <?php
+
+      $args = array(
+      'pagename' => 'mensajes-provincial',
+      'post_type' => 'any',
+      'post_status' => 'publish',
+      //Order & Orderby Parameters
+      'order'               => 'DESC',
+      'orderby'             => 'date',
+      //Pagination Parameters
+      'posts_per_page'         => 1,
+      );
+
+
+       ?>
+
+  <?php $the_query = new WP_Query($args);  ?>
+    <?php
+    $id = get_permalink($page);
+    $title = get_the_title($page );
+     while($the_query->have_posts()) : $the_query->the_post();  ?>
+        <a class="ingresar"  href="<?php the_permalink(); ?>">
+          <?php echo "Leer mensajes"; ?>
+        </a>
+        <a class="thumb" href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail('full'); ?>            
+        </a>
+<?php
+  endwhile;
+    wp_reset_postdata();
+    ?>
+
+
+    
+  </div>
 
 </div><!------------- fin cuadro provincial - ----------------- -->
 <div class="catequesis">
@@ -19,7 +55,7 @@
   </div>
   <div class="contenido">
     <!-- p class="texto">Últimos ingresos:</p -->
-    <?php get_template_part( 'template/cover', 'recursos'); ?>
-    <?php get_template_part('template/cover', 'portadarecursos'); ?>
+    <?php  get_template_part( 'template/cover', 'recursos'); ?>
+    <?php  get_template_part('template/cover', 'portadarecursos'); ?>
   </div>
 </div>
