@@ -2049,6 +2049,13 @@ input[type=number]::-webkit-outer-spin-button {
     @media screen and (max-width: 900px) {
       .frameprovincial .img-provincial {
         width: 100%; } }
+    .frameprovincial .img-provincial .link-provincial a.ingresar {
+      color: #f1b821;
+      transition: 0.5s ease;
+      text-decoration: none; }
+      .frameprovincial .img-provincial .link-provincial a.ingresar:hover {
+        color: #ffffff;
+        transition: 0.5s ease; }
     .frameprovincial .img-provincial .p-logo {
       width: 90px;
       height: 90px;
@@ -2470,6 +2477,8 @@ input[type=number]::-webkit-outer-spin-button {
       display: none; }
 
 /*======= css para template pagina =============== */
+.con-general .page-con .interiores .page-contenido hr {
+  border-color: #ffffff; }
 .con-general .page-con .interiores .page-contenido h1:nth-child(1) {
   margin-bottom: 30px;
   margin-top: 30px;
