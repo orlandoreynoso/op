@@ -3,5 +3,6 @@
 </div>
 <div class="lugares">
   <?php  $id_presencia = 57; ?>
-  <?php presencia($id_presencia);  ?>
+  <?php /* inc/contenidos/ */ ?>
+  <?php presencia($id_presencia);    ?>
 </div>

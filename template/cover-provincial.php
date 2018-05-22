@@ -1,16 +1,19 @@
 <div class="img-provincial"><!-----Iniciar cuadro provincial --- -->
-  <img class="p-logo" src="<?php echo IMAGES.'/provincial.jpg'; ?>" alt="Fray Carlos Antonio Cáceres Pereira">
-  <div class="p-mensaje">
+  <?php dynamic_sidebar('provincial_texto'); ?>
+  <!-- img class="p-logo" src="<?php // echo IMAGES.'/provincial.jpg'; ?>" alt="Fray Carlos Antonio Cáceres Pereira" -->
+  <!-- div class="p-mensaje">
     <p>Prior PrFray Carlos Antonio Cáceres Pereira ha sido reelegido como Prior Privincial por los frailes capitulares del III Capítulo Provincial en Guatemala de la Provincia de San Vicente Ferrer en Centroamérica. La elección ha sido confirmada por el Maestro de la Orden, fr. Bruno Cadoré, OP.ivincial</p>
-  </div>
-  <div class="p-firma">
+  </div --->
+  <!-- div class="p-firma">
     <div class="nombre">
           <p>Fray Carlos Antonio Cáceres Pereira</p>
     </div>
     <div class="orden">
         <p>Prior Privincial</p>
     </div>
-  </div>
+  </div -->
+
+  <?php /*
   <div class="link-provincial">
       <?php
 
@@ -18,10 +21,8 @@
       'pagename' => 'mensajes-provincial',
       'post_type' => 'any',
       'post_status' => 'publish',
-      //Order & Orderby Parameters
       'order'               => 'DESC',
       'orderby'             => 'date',
-      //Pagination Parameters
       'posts_per_page'         => 1,
       );
 
@@ -34,7 +35,7 @@
     $title = get_the_title($page );
      while($the_query->have_posts()) : $the_query->the_post();  ?>
         <a class="ingresar"  href="<?php the_permalink(); ?>">
-          <?php echo "Leer mensajes"; ?>
+          <?php echo "Ingresar"; ?>
         </a>
         <a class="thumb" href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail('full'); ?>            
@@ -47,6 +48,8 @@
 
     
   </div>
+
+  */ ?>
 
 </div><!------------- fin cuadro provincial - ----------------- -->
 <div class="catequesis">

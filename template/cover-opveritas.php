@@ -3,7 +3,7 @@
     <a class="logo" href="http://www.op.org/es"><img src="<?php echo $logoop; ?>" alt="Orden de Predicadores"></a>
   <div class="ingreso">
     <p class="texto">Orden de Predicadores</p>
-    <a class="btn-ingresar"href="http://www.op.org/es">
+    <a class="btn-ingresar"href="http://www.op.org/es" target="_blank">
       <span>ingresar</span>
     </a>
   </div>
@@ -11,7 +11,7 @@
 <div class="veritas">
   <div class="v_ingreso">
     <p class="texto">Casa de espiritualidad</p>
-    <a class="btn-ingresar"href="http://casaveritas.org/">
+    <a class="btn-ingresar"href="http://casaveritas.org/" target="_blank">
       <span>ingresar</span>
     </a>
   </div>

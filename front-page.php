@@ -48,7 +48,8 @@ Template Name: coverPage mscgt
   <?php get_template_part( 'template/cover','vidamision') ?>
 </section>
 <section class="framepresencia">
-  <?php get_template_part( 'template/cover','presencia') ?>
+  <?php // get_template_part( 'template/cover','presencia') ?>
+  <?php get_template_part( 'template/cover','presenciaimgs') ?>
 </section>
 <section class="framefamilia m-blanco">
   <?php //get_template_part( 'template/cover', 'infoparroquial') ?>

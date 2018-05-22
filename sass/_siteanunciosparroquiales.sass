@@ -28,16 +28,94 @@
 	.contenidopresencia
 		color: $blanco
 		padding-left: 30px
+		.titulo-general
+			text-transform: uppercase
+			margin: 30px auto 40px auto
+			@include tituloafterop($blanco,$negro,1.250)		
 		.titulo-presencia
 			text-transform: uppercase
-			margin-top: 20px
-			@include tituloplanes($blanco,$opamarillo,1.250)
+			margin: 30px auto 40px auto
+			@include tituloafterop($blanco,$opamarillo,1.250)
+		.cuadro-presencia
+			width: 100%
+			.conventos,
+			.casas	
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-around
+				align-items: flex-start
+				align-content: center
+				padding-bottom: 30px
+				.contenido
+					padding: 25px
+					margin: 0px auto 0px auto
+					display: block			
+					width: calc(var(--sizem)/4)
+					text-align: center
+					@media screen and ( max-width: 768px ) /*=== 0 a 640px== para movil===*/
+						width: calc(var(--sizem)/1)
+					a
+						display: block
+						text-align: center
+						text-decoration: none
+						transition: 0.5s ease
+						.thumb
+							display: block
+							width: var(--sizem)
+							height: 250px
+							margin: 0px auto
+							position: relative
+							@media screen and ( max-width: 768px ) /*=== 0 a 640px== para movil===*/
+								width: calc(var(--sizem)/1)
+								height: 250px
+							@media screen and ( max-width: 400px ) /*=== 0 a 640px== para movil===*/
+								width: 100%
+								height: auto								
+							img
+								width: 100%
+								height: 250px
+								display: block
+								transition: 0.5s ease
+								@media screen and ( max-width: 768px ) /*=== 0 a 640px== para movil===*/
+									width: calc(var(--sizem)/1)
+									height: 250px
+								@media screen and ( max-width: 400px ) /*=== 0 a 640px== para movil===*/
+									width: 100%
+									height: auto
+							.info-metaboxes
+								position: absolute
+								background-color: $celeste
+								padding: 0px 4px
+								right: 0px
+								bottom: 0px
+								.pais
+									font-size: 0.8em
+									color: $blanco
+						.titulo
+							margin-top: 20px
+							color: $blanco
+							font-size: 1.0em
+							line-height: 1.6em
+							text-decoration: none
+							transition: 0.5s ease
+					&:hover
+						.titulo
+							color: $opamarillo
+							text-decoration: none
+							transition: 0.5s ease
+						.thumb
+							img
+								opacity: 0.8
+								transition: 0.5s ease
+			.casas
 		.lugares
 			width: 100%
 			box-sizing: border-box
 			display: flex
 			flex-direction: row
 			flex-wrap: wrap
+			margin-top: 20px
 			.lista
 				width: 100%
 				margin-bottom: 10px
@@ -60,22 +138,38 @@
 					color: $blanco
 					margin-bottom: 40px
 					padding-top: 5px
+					display: flex
+					flex-direction: row
+					flex-wrap: wrap
 					@media screen and ( max-width: 640px ) /*=== 0 a 640px== para movil===*/
 						width: 100%
 					a
 						color: $blanco
 						display: inline-block
-						margin-bottom: 2px
+						margin-bottom: 10px
 						margin-right: 10px
 						font-family: $poppins
 						font-size: 0.875em
 						transition: 0.5s ease
 						text-decoration: none
+						width: calc(var(--sizem)/3.5)
+						text-align: center
 						.fa
 							color: $opamarillo
 						&:hover
 							color: $opamarillo
 							transition: 0.5s ease
+						.thumb
+							width: 50px
+							height: 50px
+							display: block
+							margin: 0px auto
+							margin-bottom: 15px
+							margin-top: 10px
+							img
+								width: 70px
+								height: 70px
+								display: block
 /*Orden de predicadores y casa espiritualidad*/
 .frameopveritas
 	background-color: green
@@ -352,6 +446,10 @@
 		text-align: center
 		@media screen and (max-width: 640px)
 			padding: 20px 40px
+		.pilares_info
+			.titulo-delete
+				background-color: green
+				display: none
 	#iglesia
 		min-height: 50px
 		display: flex

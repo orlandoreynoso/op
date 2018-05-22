@@ -46,7 +46,17 @@ function lista_presencia($id){ ?>
      while($the_query->have_posts()) : $the_query->the_post();  ?>
      <a class_="item" href="<?php the_permalink(); ?>" class="cat">
        <!-- i class="fa fa-angle-double-right"></i -->
-       <?php the_title( '',',') ?>
+        <div class="thumb" >
+          <?php 
+            if(has_post_thumbnail()){
+            the_post_thumbnail('medium');
+            }
+            else{ ?>
+              <img class="attachment-medium size-medium wp-post-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/pluma.jpg" alt="">
+            <?php } ?>
+        </div>
+       <?php // the_title( '',',') ?>
+       <?php the_title(); ?>
      </a>
 
 <?php

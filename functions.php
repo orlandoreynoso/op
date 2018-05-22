@@ -223,23 +223,51 @@ include (TEMPLATEPATH. '/inc/paginacioncpt.php');
 
 /*==== n Widget=====*/
 
-if (function_exists('register_sidebar')) {
+function ordenp_widgets(){
+     register_sidebar( array(
+     'name' => 'Blog Sidebar',
+     'id' => 'blog_sidebar',
+     'before_widget' => '<div class="widget">',
+     'after_widget' => '</div>',
+     'before_title' => '<h3>',
+     'after_title' => '</h3>'
+     ));
+
+     register_sidebar( array(
+     'name' => 'Texto provincial',
+     'id' => 'provincial_texto',
+     'before_widget' => '<div class="provincial_info">',
+     'after_widget' => '</div>',
+     'before_title' => '<div class="titulo-delete"><h3>',
+     'after_title' => '</h3></div>'
+     ));
+
+     register_sidebar( array(
+     'name' => 'Texto Nuestros pilares',
+     'id' => 'texto-pilares',
+     'before_widget' => '<div class="pilares_info">',
+     'after_widget' => '</div>',
+     'before_title' => '<div class="titulo-delete"><h3>',
+     'after_title' => '</h3></div>'
+     ));
 
     register_sidebar(
         array(
             'name' => 'Sidebar',
             'id' => 'sidebar'
     ));
-}
 
-if (function_exists('register_sidebar')) {
     register_sidebar(
         array(
             'name' => 'Suscripcion',
             'id' => 'suscripcion'
     ));
+
 }
 
+add_action('widgets_init', 'ordenp_widgets');
+
+/*==============================================*/
 
 include (TEMPLATEPATH . '/libs/paginacion.php');
 

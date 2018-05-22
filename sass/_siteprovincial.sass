@@ -120,11 +120,84 @@
 		padding: 0px 40px
 		@media screen and ( max-width: 900px ) /*=== 0 a 640px== para movil===*/
 			width: 100%
+		.provincial_info
+			display: flex
+			flex-direction: colum
+			flex-wrap: wrap
+			.titulo-delete
+				h3
+					color: $opamarillo
+					padding: 0px
+					margin: 0px auto
+					font-size: 1.125em
+					order: 2
+					display: none
+			.textwidget
+				order: 1
+				text-align: center
+				margin: 0px auto
+				p
+					line-height: 1.7em
+					color: $blanco
+					font-family: $open
+					font-size: 1em
+					font-weight: 400
+					box-sizing: border-box
+					margin: 0px auto
+					text-align: center
+					a
+						color: $opamarillo
+						transition: 0.5s ease
+						text-decoration: none
+						display: block
+						text-align: center !important
+						text-transform: uppercase
+						margin: 0px auto !important
+						&:hover
+							color: $blanco
+							transition: 0.5s ease
+					img
+						width: 90px
+						height: 90px
+						display: block
+						margin: 0px auto
+						border-radius: 50%
+						border: 5px solid $opamarillo
+				h1:nth-child(odd)
+					color: $opamarillo
+				h1:nth-child(even)	
+					color: $blanco
+				h2:nth-child(odd)
+					color: $opamarillo
+				h2:nth-child(even)	
+					color: $blanco
+				h3:nth-child(odd)
+					color: $opamarillo
+				h4:nth-child(even)	
+					color: $blanco
+				h1
+					font-family: $poppins
+					padding: 0px
+					margin: 8px auto 0px auto
+					font-size: 1.125em
+				h2
+					font-family: $poppins
+					padding: 0px
+					margin: 8px auto 0px auto
+					font-size: 1.125em
+				h3
+					font-family: $poppins
+					padding: 0px
+					margin: 8px auto 0px auto
+					font-size: 1.125em				
 		.link-provincial
+			margin-top: 10px
 			a.ingresar
 				color: $opamarillo
 				transition: 0.5s ease
 				text-decoration: none
+				text-align: center
+				margin: 0px auto
 				&:hover
 					color: $blanco
 					transition: 0.5s ease
