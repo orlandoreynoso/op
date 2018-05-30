@@ -37,6 +37,11 @@
 		    <div class="deskfrontpage" id="deskfrontpage">
 		    <div class="container menu-coverpage">
 		      <div class="row">
+						<div class="contenedor-intranet">
+							<div class="intranet">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>intranet/customer-area/">Intranet</a>
+							</div>
+						</div>					
 		        <div class="contenedor-logo-menu">
 		          <div class="or-logo-cover">
 		            <?php logo_provincia(); ?>
@@ -66,6 +71,11 @@
 		    <div class="menu-desk" id="menu-desk">
 		    <div class="container menu-coverpage">
 		      <div class="row">
+						<div class="contenedor-intranet">
+							<div class="intranet">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>intranet/customer-area/">Intranet</a>
+							</div>
+						</div>
 		        <div class="contenedor-lm-msc">
 		          <div class="or-logo-cover">
 		            <?php logo_provincia(); ?>

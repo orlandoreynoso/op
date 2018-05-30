@@ -251,6 +251,15 @@ function ordenp_widgets(){
      'after_title' => '</h3></div>'
      ));
 
+     register_sidebar( array(
+     'name' => 'Texto Misión y Vision',
+     'id' => 'mision_vision',
+     'before_widget' => '<div class="misionvision-info">',
+     'after_widget' => '</div>',
+     'before_title' => '<div class="titulo-delete"><h3>',
+     'after_title' => '</h3></div>'
+     ));     
+
     register_sidebar(
         array(
             'name' => 'Sidebar',

@@ -14,7 +14,7 @@
               <div class="titulo">
                 <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
               </div>
-              <?php  echo "Template recursos - archivee..."; ?>
+              <?php // echo "Template recursos - archivee..."; ?>
               <div class="titulos-page">
                 <?php the_title(); ?>
               </div>
@@ -33,7 +33,7 @@
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
               $args = array(
-              'post_type' => 'wpdmpro',
+              'post_type' => 'recursos',
               'post_status' => 'publish',
               'orderby' => 'date',
               'order' => 'DESC',
@@ -80,7 +80,9 @@
                       </div>
 
                         <?php /*==============*/ ?>
-                        <h5><?php the_title(); ?></h5>
+                        <div class="title-recursos">
+                            <h5><?php the_title(); ?></h5>
+                        </div>                        
                       </a>
                       <!-- div class="exe"><?php // excerpt('15'); ?> </div -->
                     </div>
@@ -103,10 +105,10 @@
                 </div>
           </div>
             <?php //  echo  'estoy en page';      ?>
-            <?php 
+            <?php  /*
               while ( have_posts() ) : the_post();
                 the_content();
-              endwhile;  
+              endwhile;    */
             ?>
           </div>
        </div>

@@ -8,11 +8,25 @@
             <div class="header-title">
               <div class="titulo">
                 <div class="mapeo">
-                  <?php dimox_breadcrumbs(); ?>
+
+<div class="breadcrumbs">
+<a href="//localhost/orden/" class="home">
+  <span itemprop="name">Home</span></a></span> <span class="sep">›
+  </span> 
+  <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+  <a href="//localhost/orden/recursos-pastorales/" itemprop="item">
+  <span itemprop="name">Recursos pastorales</span></a></span>
+  <span class="sep">›</span> 
+  <span class="current">Discípulos misioneros en el mundo de la salud</span></div>
+
+
+                  <?php // dimox_breadcrumbs(); ?>
                   <div class="father_title">
+                    <?php /*
                       <a href="<?php echo get_the_permalink(get_post_ancestor_id()); ?>">
                       <?php  echo get_the_title( get_post_ancestor_id()); ?>
                      </a>
+                     */ ?>
                  </div>
                 </div>
               </div>
@@ -21,7 +35,7 @@
               </div>
             </div>
 
-            <?php  echo "aqui va el loop wpdmpro"; ?>
+            <?php // echo "aqui va el loop wpdmpro"; ?>
             <?php //get_template_part( 'template/cpt','padre'); ?>
             <?php $pagina_id = get_the_ID(); ?>
             <div class="agrupaciones-desglose"><!-- Inicio id agrupaciones-desglose -->

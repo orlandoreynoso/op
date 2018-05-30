@@ -59,6 +59,7 @@
   <div class="contenido">
     <!-- p class="texto">Últimos ingresos:</p -->
     <?php  get_template_part( 'template/cover', 'recursos'); ?>
-    <?php  get_template_part('template/cover', 'portadarecursos'); ?>
+    <?php // get_template_part('template/cover', 'portadarecursos'); ?>
+    <a class="ingresar"  href="<?php echo esc_url( home_url( '/' ) ); ?>/recursos-pastorales">Ingresar a recursos pastorales</a>
   </div>
 </div>

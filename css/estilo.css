@@ -236,6 +236,22 @@
     .menu-desk .menu-coverpage {
       display: none; } }
 
+.contenedor-intranet {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 9999; }
+  .contenedor-intranet .intranet a {
+    color: #ffffff;
+    transition: 0.5s ease; }
+    .contenedor-intranet .intranet a:hover {
+      color: #f1b821;
+      text-decoration: none;
+      transition: 0.5s ease; }
+
 .contenedor-lm-msc {
   box-sizing: border-box;
   display: flex;
@@ -243,7 +259,8 @@
   flex-wrap: wrap;
   width: var(--sizem);
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-top: -51px; }
   @media screen and (min-width: 640px) and (max-width: 1000px) {
     .contenedor-lm-msc {
       justify-content: center; } }
@@ -532,7 +549,8 @@
   flex-wrap: wrap;
   width: var(--sizem);
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-top: -51px; }
   @media screen and (min-width: 640px) and (max-width: 1000px) {
     .contenedor-logo-menu {
       justify-content: center; } }
@@ -3932,6 +3950,12 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 10px;
   border-bottom: 1px solid red;
   padding-bottom: 10px; }
+
+.title-recursos {
+  margin-top: 50px; }
+
+.misionvision-info .titulo-delete {
+  display: none; }
 
 .framesuscripcion {
   background-color: #131313;

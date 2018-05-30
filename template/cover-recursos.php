@@ -1,10 +1,24 @@
 <?php
 
-$id_recursos = 113;
+//$id_recursos = 113;
+
+      $args = array(
+              'post_type' => 'recursos',
+              'post_status' => 'publish',
+              'orderby' => 'date',
+              'order' => 'DESC',
+              'post_parent' => 0,              
+              'order'               => 'DESC',
+              'orderby'             => 'date',
+              //Pagination Parameters
+              'posts_per_page'         => 4,
+              );
 
 ?>
-<?php $the_query = new WP_Query(construir_presencia($id_recursos));  ?>
-<?php while ($the_query-> have_posts()): $the_query-> the_post() ?>
+
+<?php $the_query = new WP_Query($args); ?>
+<?php /* $the_query = new WP_Query (construir_presencia($id_recursos));  */  ?>
+  <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
   <div class="recurso">
     <a class="pilares-ingreso"  href="<?php the_permalink(); ?>">
       <div class="thumb">      
@@ -17,6 +31,7 @@ $id_recursos = 113;
         <?php  }     ?>        
       </div>
       <div class="titulo">
+      <p></p>
         <!-- i class="fa fa-angle-double-right"></i -->
         <?php the_title(); ?>
       </div>

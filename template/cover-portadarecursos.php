@@ -1,10 +1,11 @@
       <?php
 
       $args = array(
-      'pagename' => 'recursos-pastorales',
-      'post_type' => 'any',
+      'post_type' => 'recursos',
       'post_status' => 'publish',
-      //Order & Orderby Parameters
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'post_parent' => 0, 
       'order'               => 'DESC',
       'orderby'             => 'date',
       //Pagination Parameters
